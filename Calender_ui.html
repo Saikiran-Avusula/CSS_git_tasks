@@ -13,9 +13,12 @@
             border-radius: 5px;
             text-align: center;
         }
-        tr>th>td{
-            /* child selector */
+        tr>th{
+            /* child selector(>) : the style will apply to the direct connected parent to child*/
             font-size: 110%;
+        }
+        tr th {
+            /* Descendent selector (space): style will to all the parent to child elements */
             border: 1px solid;
         }
 
@@ -29,20 +32,18 @@
         tr {
             background-color: bisque;
         }
-        
+
         /* simple selectors */
         .sun {
             color: red;
+            background-color:antiquewhite;
         }
         .blank {
-            border: none;
             background-color: white;
         }
         .date:hover {
             background-color: aquamarine; 
             border-radius: 51px; 
-            width: 15%;
-            /* font-size: 50px; */
             font-weight: bold;
         }
     </style>
