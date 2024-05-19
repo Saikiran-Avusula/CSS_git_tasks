@@ -3,28 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery- Positions</title>
+    <title>Image Gallery-Positions</title>
     <style>
-        /* .main{
+        .main{
+            border: 1cap solid rgb(180, 168, 168);
+            position: relative;
+            width: 60vw;
+            height: 80vh;
+            left: 20vw;
+            box-shadow: 5px 5px 10px;
+            background-color: beige;
+        }
+        img{
+            width: 200px;
+            height: 250px;
+        }
+        .image1{
+            border-radius: 0 5% 5%;
+            box-shadow: 5px 5px 10px;
 
         }
-        .box{
-            width: ;
-        } */
-        img{
-            width: 250px;
-            height: 250px;
+        .image2 {
+            position: absolute;
+            right: 0px;
+            border-radius: 5% 0 5% 5%;
+            box-shadow: -5px 5px 10px;
+        }
+        .image3 {
+            position: absolute;
+            left: 25vw;
+            display: block;
+            bottom: 25vh;
+            border-radius: 15% 15% 15% 15%;
+            border-style: groove;
+            box-shadow: -5px -5px 10px;
+        }
+        .image4 {
+            position: absolute;
+            display: block;
+            left: 0;
+            bottom: 0;
+            border-radius: 5% 5% 5% 0;
+            box-shadow: 5px -5px 10px;
+        }
+        .image5{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 5% 5% 0 5%;
+            box-shadow: -5px -5px 10px;
+        }
+        h2 {
+            position: relative;
+            left: 40vw;
         }
     </style>
 </head>
 <body>
+    <h2>Image Gallery Using Positions</h2>
     <div class="main">
         <div class="box">
-            <img src="../" alt="venus">
-            <img src="../CSS_git_tasks/CSS_TaskDay2_15-06/images/jupiter.png" alt="jupiter">
-            <img src="../CSS_git_tasks/CSS_TaskDay2_15-06/images/sun.png" alt="sun">
-            <img src="../CSS_git_tasks/CSS_TaskDay2_15-06/images/pluto.png" alt="pluto">
-            <img src="../CSS_git_tasks/CSS_TaskDay2_15-06/images/earth.png" alt="earth">
+            <img class="image1" src="./multimedia_folder/images/img_5terre.jpg" alt="img_5terre">
+            <img class="image2"   src="./multimedia_folder/images/img_forest.jpg" alt="img_forest">
+            <img class="image3" src="./multimedia_folder/images/sunset-1373171.jpg" alt="earth">
+            <img class="image4" src="./multimedia_folder/images/img_lights.jpg" alt="img_lights">
+            <img class="image5" src="./multimedia_folder/images/img_mountains.jpg" alt="img_mountains"> 
         </div>
     </div>
 </body>
