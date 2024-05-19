@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+</head>
+<style>
+    .main{
+        border: 3px solid;
+        width: 350px;
+        height: 500px;
+        /* background-color: beige; */
+        overflow-y: scroll;
+        position: absolute;
+        /* position: relative;  */
+        /* we can observe here to get redoff from the viewport postion,
+        must have to give in the main element as a postion:absolute.by 
+        this element consider main element is a reference element to get its postion*/    
+    }
+    .box2{
+        /* border: 1px solid;
+        width: 200px; */
+        /* position: relative;
+        top: 10px; */
+        /* background-color: aquamarine; */
+        /* z-index: 1; */
+        position: relative;
+        left: 25%;
+    }   
+    .box3{
+        /* border: 1px solid; */
+        /* position: relative; */
+        /* width: 200px; */
+        /* position: sticky;
+        top: 20px; */
+        /* background-color:blanchedalmond; */
+        /* z-index: 2;         */
+        /* here we can observe that while using z-index must use relative postion. 
+        So, we can achive priority element on top along above element or overlapped element 
+        z-index value must be lsser whereas priority element z-index value must greater than it. 
+        z-index accepts only number not decimals.*/
+        position: relative;
+        left: -25%;
+    }
+    .box4{
+        /* border: 1px solid;
+        width: 200px;
+        background-color: burlywood; */
+        /* position: sticky;
+        top: 10px; */
+        position: relative;
+    }
+    .box5{
+        /* border: 1px solid;
+        width: 200px;
+        background-color: cornsilk; */
+        position: relative;
+        left: -25%;
+    }
+    .box6{
+        /* border: 1px solid;
+        width: 200px;
+        background-color:chartreuse */
+    }
+    .box7{
+        /* border: 1px solid;
+        width: 200px;
+        background-color: red; */
+        position: relative;
+        left: -25%;
+    }
+    .box8{
+        /* border: 1px solid;
+        width: 200px;
+        background-color: yellow; */
+    }
+    .box9{
+        /* border: 1px solid;
+        width: 200px;
+        background-color: yellow; */
+        position: relative;
+        left: -25%;
+    }
+    .box10{
+        /* border: 1px solid;
+        width: 200px;
+        background-color: yellow; */
+        position: relative;
+        left: -25%;
+    }
+    .box11{
+        position: relative;
+        left: 25%;
+    }
+    .box12{
+        position: relative;
+        left: -25%;
+    }
+    .box13{
+        position: relative;
+    }
+    .box14,.box15{
+     position: relative;
+     left: -25%;
+    }
+    
+     h1{
+        color: red;
+        position: sticky;
+         top: 20px;
+        /* left: 25%;  */
+        
+     }
+</style>
+<body>
+        <div class="main">
+            <div class="box1">
+                    <section> 
+                    <h1>15/05/2024</h1>
+                        
+                       <p> Hey! Do you know about the meeting?</p>
+                    </section>
+            </div>
+            <div class="box2">
+                <section> <h1></h1>
+                    <p> Hi! I have no information as such.</p>
+                </section>
+            <div class="box3">
+                <section> <h1></h1>
+                    <p> Would you mind telling me about it?</p>
+                </section>
+            </div>
+            <div class="box4">
+                <section> <h1></h1>
+                    <p> Yeah, sure! This Friday there is a <br>
+                        meeting wherein we are asked to <br>
+                        deliver
+                        a presentation.</p>
+                </section>
+            </div>
+            <div class="box5">
+                <section> <h1>16/05/2024</h1>
+                    <p>What precisely do we need to present?</p>
+                </section>
+            </div>
+            <div class="box6">
+                <section> <h1></h1>
+                    <p>We need to discuss the challenges that <br>
+                        we face in our everyday work and the <br>
+                        steps we take to resolve those issues.
+                    </p>
+                </section>
+            </div>
+            <div class="box7">
+                <section> <h1></h1>
+                    <p>Are we only supposed to discuss the <br>
+                         problems with the solutions?</p>
+                </section>
+            </div>
+            <div class="box8">
+                <section><h1></h1>
+                    <p> Oh, No! There would be an open <br>
+                        discussion post-presentation where <br>
+                        you can discuss other things as well.</p>
+                </section>
+            </div>
+            <div class="box9">
+                <section> <h1></h1>
+                    <p>Now, that sounds music to my ears.</p>
+                </section>
+            </div>
+            <div class="box10">
+                <section> <h1>18/05/2024</h1>
+                    <p>Aahan! It seems you have been looking <br>
+                        for this opportunity for a coon’s age.</p>
+                </section>
+            </div>
+            <div class="box11">
+                <section> <h1></h1>
+                    <p>You got me right.</p>
+                </section>
+            </div>
+            <div class="box12">
+                <section> <h1></h1>
+                    <p>Anyway! I need to prepare for the same.</p>
+                </section>
+            </div>
+            <div class="box13">
+                <section> <h1></h1>
+                   <p>Same here. In case you need any help,<br>
+                     feel free to approach me</p>
+                </section>
+            </div>
+            <div class="box14">
+                <section> <h1>Today</h1>
+                    <p>Sure thing! Thanks a heap.</p>
+                </section>
+            </div>
+            
+
+
+</body>
+</html>
