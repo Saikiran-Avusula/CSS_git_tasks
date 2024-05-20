@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Architect template-Web site</title>
+    <style>
+
+    main {
+        position:absolute;
+    }
+    a{
+        text-decoration: none;
+        position: relative;
+        /* right: -50%; */
+        font-size: 15px;
+        font-family: Verdana, sans-serif;
+        color: black;
+    }
+    .contact{
+        position: relative;
+        right: -72%;
+    }
+    .about {
+        position: relative;
+        right: -68%;
+    }
+    .projects{
+            position: relative;
+            right: -65%;
+    }
+    header{
+      display: inline-block;
+      width: 105%;
+      /* border: 1px solid; */
+      height: 6vh;
+      left: -2%;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, 
+      rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+      position: fixed;
+    }
+    h2 {
+        display: inline;
+        font-family: Verdana, sans-serif;
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-weight: 2;
+        position: relative;
+        top: 33%;
+        right: -4%;
+    }
+    span{
+        font-weight: bold;
+    }
+    nav {
+        display: inline;
+        letter-spacing: 4px;
+        position: relative;
+        top: 33%;
+    }
+    </style>
 </head>
 <body>
-    
+    <div class="main">
+
+        <header class="header">
+            <h2><span>B R</span> Architects</h2>
+            <nav>
+                <a class="projects" href="#projects">Projects</a>
+                <a class="about" href="#about">About</a>
+                <a class="contact" href="contact">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <img src="../CSS_git_tasks/multimedia_folder/images/sunset-1373171.jpg" alt="building">
+            </div>
+        </main>
+    </div>
 </body>
 </html>
