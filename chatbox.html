@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbox</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         .main{
-            border: 2px solid;
+            border: 6px solid;
             width: 18vw;
             height: 50vh;
             position: absolute;
+            border-radius: 15px;
+            background-color: rgb(189, 250, 230);
+            left: 40%;
+            top: 9%;
         }
         .topbar{
             border: 2px solid;
-            width: 33.9vh;
+            width: 34.1vh;
             height: 5vh;
             position: relative;
             left: -.5%;
             top: -.5%;
-            border: hidden;
+            box-shadow: 1px 1px 5px;
+            background-color: rgb(252, 246, 246);
+            border-radius: 10px 10px 15px 15px;
         }
         .chat {
             border: 1px solid;
@@ -27,7 +34,7 @@
             top: -1%;
             overflow-y: scroll;
             overflow-x: hidden;
-            /* border: hidden; */
+            border: hidden;
             /* border: hidden; */
         }
         h3{
@@ -38,6 +45,10 @@
             right: -39%;
             margin-bottom: -5%;
             margin-left: 35%;
+            border: 1px solid black;
+            border-radius: 8px;
+            width: 5.5vw;
+            text-align: center;
         }
         .box2{
             position: relative;
@@ -98,21 +109,75 @@
         .left {
             position: relative;
             right: -10%;
-            top: 25%;
+            top: 13%;
+            font-size: 25px;
         }
         .name {
             position: relative;
             right: -25%;
-            top: -16%;
+            top: -45%;
+            font-size: 20px;
         }
-        
+        .call {
+            position: relative;
+            top: -100%;
+            right: -60%;
+            font-size:18px;
+        }
+        .video{
+            position: relative;
+            top: -165%;
+            font-size: 21px;
+            right: -70%;
+        }
+        .info{
+            position: relative;
+            top: -210%;
+            font-size: 21px;
+            right: -85%;
+        }
+        .clip{
+            position: relative;
+            right: -8%;
+        }
+        .textbox{
+            position: relative;
+            color: red;
+            left: 20%;
+            bottom: 20px;
+            border: 2px solid;
+            border-radius: 10px;
+            width: 10vw;
+            text-align: center;
+            bottom: 18px;
+        }
+        .material-icons {
+            position: relative;
+            color: green;
+            bottom: 44px;
+            right: -85%;
+        }
+        .text{
+            position: relative;
+            border: 2px solid;
+            border-radius: 8px;
+            box-shadow: 1px -1px 2px;
+            border: none;
+            height: 3vh;
+            top: 0.8%;
+            background-color: rgb(252, 246, 246);
+        }
     </style>
 </head>
 <body>
+    <h2 style="text-align: center;">Chatbox UI Using Positions</h2>
     <div class="main">
         <div class="topbar">
             <section class="left">⬅</section>
             <section class="name">10k Coders</section>
+            <section class="call">📞</section>
+            <section class="video">📹</section>
+            <section class="info">ℹ️</section> 
         </div>
         <div class="chat">
             <div>
@@ -201,7 +266,7 @@
                 <br><br><br>
             </div>
 
-            <h3>21/05/2024</h3>
+            <h3>Yesterday</h3>
             <section class="box21">
                 <p>Sounds good. Coffee shop at noon?</p>
             </section>
@@ -218,7 +283,7 @@
                 <p>Woohoo! Go team!</p>
             </section>
 
-            <h3>22/05/2024</h3>
+            <h3>Today</h3>
             <section class="box26">
                 <p> Speaking of sports, tennis this weekend?</p>
             </section>
@@ -228,22 +293,13 @@
             <section class="box28">
                 <p> Awesome! Game on!</p>
             </section>
-            <!-- <section class="box29">
-                <p>By the was the business thing? How is it going?</p>
-            </section>
-            <section class="box30">
-                <p>By the was the business thing? How is it going?</p>
-            </section> -->
-
-
-
-
-
         </div>
         <div class="text">
-
+            <section class="clip">🔗</section>
+            <section class="textbox">Type your text...</section>
+            <i class="material-icons" style="font-size:26px">send</i>
         </div>
-
+        
     </div>
 </body>
 </html>
