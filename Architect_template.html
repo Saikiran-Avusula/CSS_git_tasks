@@ -3,360 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architect template-Web site</title>
+    <title>Architect Template</title>
     <style>
-    nav{
-        border: 1px solid;
-        font-family: Verdana, sans-serif;
-        display: inline-block;
-        width: 105vw;
-        height: 7vh;
-        left: -5%;
-        position:fixed;
-        letter-spacing: 4px;
-        z-index: 2;
-        top: -.2%;
-        border: none;
-        background-color: white;
-        box-shadow:rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px ;
-    }
-    h2 {
-        display: inline;
-        font-size: 15px;
-        position: relative;
-        top: 30%;
-        padding-left:120px ;
-    }
-    a {
-        position: relative;
-        left: 58%;
-        /* margin-left: 75%; */
-        padding-right: -2%;
-        text-decoration: none;
-        top: 30%;
-        margin: 18px; 
-        color: black;
-    }
-    span{
-        font-size: 15px;
-        font-weight: 200;
-    }
-    .big {
-        position: relative;
-        /* z-index: 1; */
-    }
-    img {
-        position: relative;
-        width: 85vw;
-        margin-left: 7%;
-        margin-top: 2.7%;
-        z-index: 1;
 
-    }
-    .h2project{
-        font-weight: 200;
-        font-size: 24px;
-        line-height: 36px;
-        position: relative;
-        top: 80px;
-        font-family: Verdana, sans-serif;
-        /* border: 2px solid ; */
-        bottom: 80px;
-    }
-    .gallery {
-        border: 2px solid;
-        width: 85vw;
-        /* position: relative; */
-        margin-top: 150px;
-        margin-left: 115px;
-        height: 55vh;
-        z-index: 1;
-    }
-    .image1 {
-        width: 20vw;
-        height: 25vh;
-        position: relative;
-        top: -103px;
-        left: -7%;
-        z-index: 1;
-    }
-    .renovated {
-        position: relative;
-        top: 70px;
-        color: white;
-        background-color: black;
-        font-family: Verdana, sans-serif;
-        z-index: 2;
-        right: -8%;
-        border: 2px solid black;
-        width: 5vw;
-        text-align: center;
-        padding: 4px;
-    }
-    .image2 {
-        width: 20vw;
-        height: 25vh;
-        position: relative;
-        z-index: 1;
-        right: -19%;
-        top: -434px;
-        z-index: 1;
-    }
-    .brickhouse {
-        position: relative;
-        z-index: 2;
-        /* font-size: 25px; */
-        right: -34%;
-        top: -258px;
-        background-color: black;
-        color: white;
-        font-family: Verdana, sans-serif;
-        border: 2px solid black;
-        width: 7vw;
-        text-align: center;
-        padding: 4px;
-    }
-    .image3 {
-        width: 20vw;
-        height: 25vh;
-        position: relative;
-        z-index: 1;
-        right: -45%;
-        top: -765px;
-        z-index: 1;
-    }
-    .renovated2 {
-        position: relative;
-        z-index: 2;
-        background-color: black;
-        color: white;
-        font-family: Verdana, sans-serif;
-        border: 2px solid black;
-        width: 7vw;
-        text-align: center;
-        padding: 4px;
-        right: -59%;
-        top: -66vh;
-    }
-    .image4 {
-        width: 19vw;
-        height: 25vh;
-        position: relative;
-        z-index: 1;
-        right: -70.7%;
-        top: -122vh;
-        z-index: 1;
-    }
-    .barnhouse {
-        position: relative;
-        z-index: 2;
-        background-color: black;
-        color: white;
-        font-family: Verdana, sans-serif;
-        border: 2px solid black;
-        width: 7vw;
-        text-align: center;
-        padding: 4px;
-        right: -85%;
-        top: -103vh;
-    }
-    .image5 {
-        width: 20vw;
-        height: 25vh;
-        position: relative;
-        z-index: 1;
-        right: 7%;
-        top: -128.5vh;
-        z-index: 1;
-    }
-    .summer {
-        position: relative;
-        z-index: 2;
-        /* font-size: 25px; */
-        right: -7%;
-        top: -108vh;
-        background-color: black;
-        color: white;
-        font-family: Verdana, sans-serif;
-        border: 2px solid black;
-        width: 7vw;
-        text-align: center;
-        padding: 4px;
-    }
-    .image6 {
-        width: 20vw;
-        height: 25vh;
-        position: relative;
-        z-index: 1;
-        right: -19%;
-        top: -165.5vh;
-        z-index: 1;
-    }
-    .brickhouse2{
-        position: relative;
-        z-index: 2;
-        /* font-size: 25px; */
-        right: -34%;
-        top: -145vh;
-        background-color: black;
-        color: white;
-        font-family: Verdana, sans-serif;
-        border: 2px solid black;
-        width: 7vw;
-        text-align: center;
-        padding: 4px;
-    }
-    .image7 {
-        width: 20vw;
-        height: 25vh;
-        position: relative;
-        z-index: 1;
-        right: -45%;
-        top: -202.5vh;
-        z-index: 1;
-    }
-    .barnhouse2 {
-        position: relative;
-        z-index: 2;
-        /* font-size: 25px; */
-        right: -60%;
-        top: -182.5vh;
-        background-color: black;
-        color: white;
-        font-family: Verdana, sans-serif;
-        border: 2px solid black;
-        width: 7vw;
-        text-align: center;
-        padding: 4px;
-    }
-    .image8{
-        width: 18vw;
-        height: 25vh;
-        position: relative;
-        z-index: 1;
-        right: -71.8%;
-        top: -239.4vh;
-        z-index: 1;
-    }
-    .last{
-        position: relative;
-        z-index: 2;
-        /* font-size: 25px; */
-        right: -86%;
-        top: -219.5vh;
-        background-color: black;
-        color: white;
-        font-family: Verdana, sans-serif;
-        border: 2px solid black;
-        width: 7vw;
-        text-align: center;
-        padding: 4px;
-    }
-    .text {
-        position: relative;
-        z-index: 2;
-        right: -45%;
-        font-family: Verdana, sans-serif;
-    }
-    .banner{
-        width: 85vw;
-        height: 80vh;
-        margin-left: 90px;
-        background-image: url(../CSS_git_tasks/multimedia_folder/images/architect\ \(1\).jpg);
-        background-size: 100% 100%;
-    }
-    section {
-        position:relative;
-        top: 8vh;
-    }
-    h1 {
-        position: relative;
-        text-align: center;
-        top: 38vh;
-        font-size:28px;
-        color: white;
-        font-family: Verdana, sans-serif;
-        font-weight: 300;
-        letter-spacing: 5px;
-    }
-    .span2 {
-        font-size: 25px;
-        letter-spacing: none;
-        font-weight: bold;
-        background-color: rgba(0, 0, 0, 0.598);
-        color: white;
-        padding: 10px;
-    }
+        .main{
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            /* flex-direction: column; */
+        }
+        nav{
+            /* border: 1px solid; */
+            width: 100%;
+            height: 6vh;
+            margin-top: -1vh;
+            position: fixed;
+            /* margin-left: %; */
+            background-color: white;
+        }
+        .logo {
+            /* border: 1px solid; */
+            width: 10vw;
+            height: 6vh;
+            margin-left: 2vw;
+            text-align: center;
+        }
+        .header{
+            display: flex;
+            justify-content: end;
+            gap: 5vw;
+            margin-top: -4vh;
+            margin-right: 8vw;
+
+        }
+        .bbody{
+            /* border: 1px solid; */
+            width: 82vw;
+            height: 350vh;
+            margin-top: 5vh;
+        }
+       
+        .bimage {
+            /* border: 1px solid; */
+            width: 82vw;
+            height: 80vh;
+        }
+        .blogo {
+            /* border: 1px solid; */
+            width: 100%;
+            height: 6vh;
+            color: red;
+        }
+
+        .projects {
+            /* border: 1px solid; */
+            width: 100%;
+            height: 6vh;
+            color: red;
+            margin-top: 48vh;
+        }
+        .bproject {
+            /* border: 2px solid; */
+            width: 15px;
+            height: 10px;
+            margin-top: 400px;
+            display: flex;
+            padding: 5px;
+        }
+        .section1{
+            margin-top: 30%;
+        }
+        .pgallery {
+            /* border: 1px solid; */
+            width: 82vw;
+            /* height: 55%; */
+            margin-top: 4%;
+            display: flex;
+            gap: 15px;
+
+        }
+        .image1 {
+            /* border: 1px solid; */
+            width: 20vw;
+            height: 22vh;
+        }
+        .section2{
+            margin-top: 6%;
+        }
+        .agallery {
+            /* border: 1px solid; */
+            width: 82vw;
+            /* height: 55%; */
+            margin-top: 4%;
+            display: flex;
+            gap: 15px;
+
+        }
+        .image2 {
+            /* border: 1px solid; */
+            width: 19.8vw;
+            height: 220px;
+            /* color: red; */
+        }
+        .imageinfo {
+            /* border: 2px solid; */
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .contact1 {
+            color: black;
+            font-size: 18px;
+            border: 1px solid;
+            text-align: center;
+            height: 4vh;
+            background-color: rgba(0, 0, 0, 0.224);
+        }
+        .section3{
+            margin-top: 350px;
+        }
+        input {
+            width: 81.5vw;
+            height: 50px;
+            font-size: 18px;
+        }
+        button{
+            color: white; 
+            background-color: black;
+            font-size: 18px;
+            height: 40px; 
+
+        }
+        .section4{
+            margin-top: 70px;
+        }
+        .lastimage {
+            border: 1px solid;
+            width: 82vw;
+            height: 80vh;
+        }
+        footer{
+            border: 1px solid;
+            width: 98.9vw;
+            height: 90px;
+            margin-left: -8px;
+            margin-top: 315px;
+            margin-bottom: -6px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+
+        }
     </style>
 </head>
 <body>
     <div class="main">
-
         <nav>
-        <h2>B R <span>Architects</span></h2>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <div class="logo">
+                <p>B R Architects</p>
+            </div>
+            <div class="header">
+                <div class="project">Projects</div>
+                <div class="about">About</div>
+                <div class="contact">Contact</div>
+            </div>
         </nav>
-        
-        <section>
-            <div class="banner">
-                <div class="bannercont">
-                    <h1><span class="span2">B R</span> Architects</h1>
-                </div>
-            </div>
     
-        </section>
+        <div class="bbody">
+            <main>
+                <img class="bimage" src="../CSS_git_tasks/multimedia_folder/images/architect (1).jpg" alt="">
+                <p style="margin-top: -45vh; text-align: center; font-size: 28px; color: white;" > B R Architect</p>
+            </main>
 
-        <section>
-            <div>
-                    <h2 class="h2project">Projects</h2>
-            </div>
-        </section>
-        <section>
-        <div class="gallery">
-            <div>
-                <p class="renovated">Summer</p>
-                <img class="image1" src="../CSS_git_tasks/multimedia_folder/images/house5.jpg" alt="Renovated">
-            </div>
 
-            <div>
-                <p class="brickhouse">Brick House</p>
-                <img class="image2" src="../CSS_git_tasks/multimedia_folder/images/house2.jpg" alt="brickhouse">
-            </div>
+                <section class="section1">
+                        <p style="font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: black;">Projects</p>
+                        <div class="pgallery">
+                            <div class="image1"><img  class="image1"  src="../CSS_git_tasks/multimedia_folder/images/house5.jpg" alt="house5"></div>
+                            <div class="image1"><img class="image1" src="../CSS_git_tasks/multimedia_folder/images/house2.jpg" alt="house2"></div>
+                            <div class="image1"><img class="image1" src="../CSS_git_tasks/multimedia_folder/images/asset 3.jpeg" alt="asset"></div>
+                            <div class="image1"><img class="image1" src="../CSS_git_tasks/multimedia_folder/images/asset 4.jpeg" alt="asset"></div>
+                        </div>
+                        <div class="pgallery">
+                            <div class="image1"><img class="image1" src="../CSS_git_tasks/multimedia_folder/images/house2.jpg" alt="house2"></div>
+                            <div class="image1"><img  class="image1"  src="../CSS_git_tasks/multimedia_folder/images/house5.jpg" alt="house5"></div>
+                            <div class="image1"><img class="image1" src="../CSS_git_tasks/multimedia_folder/images/asset 4.jpeg" alt="asset"></div>
+                            <div class="image1"><img class="image1" src="../CSS_git_tasks/multimedia_folder/images/asset 3.jpeg" alt="asset"></div>
+                        </div>
+                </section> 
 
-            <div>
-                <p class="renovated2">Renovated</p>
-                <img  class="image3"  src="../CSS_git_tasks/multimedia_folder/images/asset 3.jpeg" alt="Renovated">
-            </div>
+                    <section class="section2">
+                        <p style="font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: black;">About</p>
+                        <p style="font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="agallery">
+                            <div class="image2">
+                                <img  class="image2"  src="../CSS_git_tasks/multimedia_folder/images/asset 5.jpeg" alt="image1">
+                                <div class="imageinfo">
+                                    <div>
+                                        <p style="font-size: 25px;">John Doe</p>
+                                    </div>
+                                    <div>
+                                        <p style="font-size: 15px;">CEO & FOUNDER</p>
+                                    </div>
+                                    <div>
+                                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                    </div>
+                                    <div class="contact1">
+                                        <p style="margin-top: 6px;">Contact</p>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="image2">
+                                <div class="image2">
+                                    <img  class="image2"  src="../CSS_git_tasks/multimedia_folder/images/asset 6.jpeg" alt="image1">
+                                    <div class="imageinfo">
+                                        <div>
+                                            <p style="font-size: 25px;">Jane Doe</p>
+                                        </div>
+                                        <div>
+                                            <p style="font-size: 15px;">Architect</p>
+                                        </div>
+                                        <div>
+                                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                        </div>
+                                        <div class="contact1">
+                                            <p style="margin-top: 6px;">Contact</p>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="image2">
+                                <div class="image2">
+                                    <img  class="image2"  src="../CSS_git_tasks/multimedia_folder/images/asset 7.jpeg" alt="image1">
+                                    <div class="imageinfo">
+                                        <div>
+                                            <p style="font-size: 25px;">Mike Ross</p>
+                                        </div>
+                                        <div>
+                                            <p style="font-size: 15px;">Architect</p>
+                                        </div>
+                                        <div>
+                                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                        </div>
+                                        <div class="contact1">
+                                            <p style="margin-top: 6px;">Contact</p>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="image2">
+                                <div class="image2">
+                                    <img  class="image2"  src="../CSS_git_tasks/multimedia_folder/images/asset 8.jpeg" alt="image1">
+                                    <div class="imageinfo">
+                                        <div>
+                                            <p style="font-size: 25px;">Dan Star</p>
+                                        </div>
+                                        <div>
+                                            <p style="font-size: 15px;">Architect</p>
+                                        </div>
+                                        <div>
+                                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                        </div>
+                                        <div class="contact1">
+                                            <p style="margin-top: 6px;">Contact</p>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-            <div>
-                <p class="barnhouse">Barn House</p>
-                <img class="image4"   src="../CSS_git_tasks/multimedia_folder/images/asset 4.jpeg" alt="barnhouse">
-            </div>
+                    <section class="section3">
+                            <!-- <section class="section1"> -->
+                        <p style="font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: black;">Contact</p>
+                        <br>
+                        <p style="font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Lets get in touch and talk about your next project.</p>
+                        <div class="form">
+                            <form action="">
+                                <input type="text" placeholder="Name"> <br><br>
+                                <input type="email" placeholder="Email"> <br><br>
+                                <input type="text" placeholder="Subject"> <br><br>
+                                <input type="text" placeholder="Comment"><br><br><br>
+                                <button>SEND MESSAGE</button>
+                            </form>
+                        </div>
+                    </section> 
 
-            <div>
-                <p class="summer">Summer</p>
-                <img class="image5" src="../CSS_git_tasks/multimedia_folder/images/house2.jpg" alt="summer">
-            </div>
-
-            <div>
-                <p class="brickhouse2">Brickhouse</p>
-                <img class="image6" src="../CSS_git_tasks/multimedia_folder/images/house5.jpg" alt="brickhouse2">
-            </div>
-
-            <div>
-                <p class="barnhouse2">Renovated</p>
-                <img class="image7"   src="../CSS_git_tasks/multimedia_folder/images/asset 4.jpeg" alt="barnhouse2">
-            </div>
-
-            <div>
-                <p class="last">Renovated</p>
-                <img  class="image8"  src="../CSS_git_tasks/multimedia_folder/images/asset 3.jpeg" alt="last">
-            </div>
-
-        <div>    
-        </section>
+                    <!-- section 4 -->
+                    <section class="section4">
+                        <img class="lastimage" src="../CSS_git_tasks/multimedia_folder/images/map.jpg" alt="">
         
+        </div>
+    </div>
+    <footer>
+        <p style="margin-top: 35px;">Designed by Sai Kiran Avusula</p>
+    </footer>
 </body>
 </html>
