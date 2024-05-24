@@ -21,19 +21,23 @@
             /* margin-left: %; */
             background-color: white;
         }
-        .logo {
+        .navlogo {
             /* border: 1px solid; */
             width: 10vw;
             height: 6vh;
             margin-left: 2vw;
             text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 3px;
         }
         .header{
             display: flex;
             justify-content: end;
             gap: 5vw;
-            margin-top: -4vh;
-            margin-right: 8vw;
+            margin-top: -6vh;
+            margin-right: 4vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 5px;
 
         }
         .bbody{
@@ -43,16 +47,20 @@
             margin-top: 5vh;
         }
        
-        .bimage {
-            /* border: 1px solid; */
+        main {
+            border: 1px solid;
             width: 82vw;
-            height: 80vh;
+            height: 82vh;
+            background-image: url(../CSS_git_tasks/multimedia_folder/images/architect\ \(1\).jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .blogo {
-            /* border: 1px solid; */
-            width: 100%;
-            height: 6vh;
-            color: red;
+        .blogo{
+            color: white;
+            font-size: 35px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 3px;
         }
 
         .projects {
@@ -60,7 +68,7 @@
             width: 100%;
             height: 6vh;
             color: red;
-            margin-top: 48vh;
+            margin-top: 40vh;
         }
         .bproject {
             /* border: 2px solid; */
@@ -71,7 +79,7 @@
             padding: 5px;
         }
         .section1{
-            margin-top: 30%;
+            margin-top: 5%;
         }
         .pgallery {
             /* border: 1px solid; */
@@ -159,8 +167,8 @@
 <body>
     <div class="main">
         <nav>
-            <div class="logo">
-                <p>B R Architects</p>
+            <div class="navlogo">
+                <p><span style="font-weight: bold;">B R</span> Architects</p>
             </div>
             <div class="header">
                 <div class="project">Projects</div>
@@ -171,8 +179,7 @@
     
         <div class="bbody">
             <main>
-                <img class="bimage" src="../CSS_git_tasks/multimedia_folder/images/architect (1).jpg" alt="">
-                <p style="margin-top: -45vh; text-align: center; font-size: 28px; color: white;" > B R Architect</p>
+                <p class="blogo"><span style="font-weight: bold; background-color: rgba(0, 0, 0, 0.635); width: 20px; padding: 10px;">B R</span> Architects</p>
             </main>
 
 
