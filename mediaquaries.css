@@ -1,0 +1,92 @@
+
+@media screen and (min-width:426px) and (max-width:2560px)
+            { 
+                .main {
+                    border: 2px solid;
+                    width: 90vw;
+                    height: 50vh;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .frame {
+                    border: 2px solid;
+                    width: 80vw;
+                    height: 95%;
+                    padding: 15px;
+                }
+                .frame1, .frame2{
+                    display: flex;
+                    gap: 5px 5px;
+                    height: 50%;
+                    padding: 2px;
+                }
+                .photo1 {
+                    border: 2px solid blue;
+                    width: 20vw;
+                    /* height: %; */
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 3.jpeg);
+                }
+                .photo2 {
+                    border: 2px solid green;
+                    width: 20vw;
+                    /* height: 50%; */
+                    background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 4.jpeg);
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                }
+                p {
+                    background-color: aliceblue;
+                }
+            }
+
+@media screen and (max-width: 425px)
+{
+
+    .main {
+        border: 2px solid;
+        width: 90vw;
+        height: 50vh;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .frame {
+        border: 2px solid;
+        width: 80vw;
+        height: 95%;
+        padding: 15px;
+        background-color: rgb(109, 104, 104);
+    }
+    .frame1, .frame2{
+        display: flex;
+        gap: 5px 5px;
+        height: 50%;
+        padding: 2px;
+    }
+    .photo1 {
+        border: 2px solid blue;
+        width: 20vw;
+        /* height: %; */
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 3.jpeg);
+    }
+    .photo2 {
+        border: 2px solid green;
+        width: 20vw;
+        /* height: 50%; */
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 4.jpeg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    p {
+        background-color: aliceblue;
+    }
+}
