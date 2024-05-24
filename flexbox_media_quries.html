@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quries using flex</title>
+    <style>
+        @media screen and (min-width: 768px) 
+            {
+                .box
+                {
+                    border: 2px solid;
+                    width: 60vw;
+                    height: 60vh;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    background-color: beige;
+                }
+                .nav {
+                    border: 2px solid;
+                    height: 13%;
+                    background-color: antiquewhite;
+                }
+                .main {
+                    border: 2px solid;
+                    height: 70%;
+                    display: flex;
+                    padding: 10px;
+                    gap: 5px;
+                    background-color: aquamarine;
+                }
+                .cd1{
+                    border: 2px solid red;
+                    height: 95%;
+                    width: 25%;
+                    background-color: rgb(224, 164, 164);
+                }
+                .cd2 {
+                    border: 2px solid blue;
+                    height: 95%;
+                    width: 50%;
+                    background-color: rgb(153, 153, 239);
+                }
+                .cd3 {
+                    border: 2px solid green;
+                    height: 95%;
+                    width: 25%;
+                    background-color: rgb(129, 236, 129);
+                }
+                .footer {
+                    border: 2px solid;
+                    height: 15%;
+                    background-color: aqua;
+                }
+            }
+            @media screen and (min-width:320px) and (max-width:768px) 
+            {
+                .box
+                {
+                    border: 2px solid;
+                    width: 60vw;
+                    height: 60vh;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    background-color: rgb(254, 254, 252);
+                }
+                .nav {
+                    border: 2px solid;
+                    height: 13%;
+                    background-color: rgb(236, 136, 4);
+                }
+                .main {
+                    border: 2px solid;
+                    height: 70%;
+                    display: flex;
+                    padding: 10px;
+                    gap: 5px;
+                    flex-direction: column;
+                    background-color: rgb(10, 245, 167);
+                }
+                .cd1{
+                    border: 2px solid red;
+                    height: 95%;
+                    width: 100%;
+                    background-color: rgb(240, 14, 14);
+                }
+                .cd2 {
+                    border: 2px solid blue;
+                    height: 95%;
+                    width: 100%;
+                    background-color: rgb(10, 10, 227);
+                }
+                .cd3 {
+                    border: 2px solid green;
+                    height: 95%;
+                    width: 100%;
+                    background-color: rgb(8, 245, 8);
+                }
+                .footer {
+                    border: 2px solid;
+                    height: 15%;
+                    background-color: rgb(10, 240, 240);
+                }
+       
+            }
+    </style>
+    
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+        <div class="box">
+                <div class="nav">Navigation bar</div>
+                    <div class="main">
+                        <div class="cd1">Child 1</div>
+                        <div class="cd2">child 2</div>
+                        <div class="cd3">Child 2</div>
+                    </div>
+                    <div class="footer">Footer</div>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
