@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Potfolio Template</title>
+    <style>
+        header {
+            border: 1px solid;
+            width: 7vw;
+            height: 910px;
+            margin-left: -1%;
+            margin-top: -1%;
+            background-color: white;
+            position: fixed;
+            /* here nav bar fixed with postion fixed with align elements to left side */
+        }
+        .navimg {
+            /* nav bar logo of image */
+            /* image size set to 100% WIDTH OF THE NAV BAR SIZE, HEIGHT IS DEFAULT OFI IMAGE*/
+            width: 100%;
+            display: flex;
+            /* flex-direction: ; */
+            
+        }
+        .home, .about, .photos, .contact {
+            background-color: white;
+            background-image: url(../CSS_git_tasks/multimedia_folder/images/icons8-home-26.png);
+            border: 2px solid white;
+            width: 100%;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; 
+        }
+        .main_border{
+            border: 2px solid;
+            margin-left: 8%;
+            height: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* background-color: black; */
+        }
+        .person_name {
+            /* border: 2px solid; */
+            margin-top: 3%;
+            height: 50%;
+            font-size: 64px;
+            /* text-align: center; */
+            font-family: Montserrat, sans-serif;
+            /* color: white; */
+            
+        }
+        .person_designation {
+            /* border: 2px solid; */
+            margin-top: -8%;
+            /* text-align: center; */
+            font-size: 15px;
+            font-family: Montserrat, sans-serif;
+            /* color: white; */
+            
+        }
+        .person_img {
+            border: 2px solid;
+            height: 100%;
+            width: 100vh;
+        }
+    </style>
+</head>
+<body">
+    <header>
+        <nav>
+            <div>
+                <img  class="navimg" src="../CSS_git_tasks/multimedia_folder/images/avatar_smoke_nav.jpg" alt="avatar_smoke_nav">
+            </div>
+            <div class="nav_menu">
+                <div id="home"><a href=""><img class="home"     src="../CSS_git_tasks/multimedia_folder/images/icons8-home-26.png" alt="icons8-home-26"></a></div>
+                <div id="about"><a href=""><img class="about"    src="../CSS_git_tasks/multimedia_folder/images/icons8-home-26.png" alt=""></a></div>
+                <div id="photos"><a href=""><img class="photos"   src="../CSS_git_tasks/multimedia_folder/images/icons8-home-26.png" alt=""></a></div>
+                <div id="contact"><a href=""><img class="contact"  src="../CSS_git_tasks/multimedia_folder/images/icons8-home-26.png" alt=""></a></div>
+            </div>    
+        </nav>
+    </header>
+
+    <main>
+        <div class="main_border">
+            <div><p class="person_name">I'm John Doe.</p></div>
+            <div><p  class="person_designation">Photographer and Web Designer.</p></div>
+            <div><img class="person_img" src="../CSS_git_tasks/multimedia_folder/images/man_smoke.jpg" alt="man_smoke"></div>
+        </div>
+    </main>
+</body>
+</html>
