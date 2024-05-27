@@ -1,0 +1,158 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(8, 18vh);
+        height: 90vh;
+        justify-content: center;
+      }
+      section {
+        background-color: #fff;
+        border: 1px solid;
+        height: 100%;
+        width: 100%;
+        display: grid;
+      }
+      div {
+        /* background-color: red; */
+        /* border: 1px solid; */
+        height: 20vh;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      section:nth-child(2n) div:nth-child(2n) {
+        background-color: rgba(42, 40, 40, 0.619);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      section:nth-child(2n + 1) div:nth-child(2n + 1) {
+        background-color: rgba(42, 40, 40, 0.619);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .fa-light {
+        color: red;
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div><i class="fas fa-chess-rook" style="font-size: 60px; color: yellowgreen"></i></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: yellowgreen"></i></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: red"></i></div>
+        <div><i class="fas fa-chess-rook" style="font-size: 60px; color: red"></i></div>
+      </section>
+
+      <section>
+        <div> <i class='fas fa-chess-knight' style='font-size:60px;color:yellowgreen'></i></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color:yellowgreen"></i></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: red"></i></div>
+        <div><i class='fas fa-chess-knight' style='font-size:60px;color:red'></i></div>
+      </section>
+
+      <section>
+        <div><i class='fas fa-chess-bishop' style='font-size:60px;color: yellowgreen'></i></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: yellowgreen"></i>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: red"></i></div>
+        <div><i class='fas fa-chess-bishop' style='font-size:48px;color:red'></i></div>
+      </section>
+
+      <section>
+        <div><i class='fas fa-chess-queen' style='font-size:48px;color:yellowgreen'></i></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: yellowgreen"></i></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: red"></i></div>
+        <div><div><i class='fas fa-chess-queen' style='font-size:48px;color:red'></i></div>
+      </section>
+
+      <section>
+        <!-- king -->
+        <div><i class='fas fa-chess-king' style='font-size:48px;color:yellowgreen'></i></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: yellowgreen"></i></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: red"></i></div>
+        <div><i class='fas fa-chess-king' style='font-size:48px;color:red'></i></div>
+      </section>
+
+      <section>
+        <div><i class='fas fa-chess-bishop' style='font-size:48px;color:yellowgreen'></i></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: yellowgreen"></i></div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: red"></i></div>
+        <div><i class='fas fa-chess-bishop' style='font-size:48px;color:red'></i></div>
+      </section>
+
+      <section>
+        <div><i class='fas fa-chess-knight' style='font-size:60px;color:yellowgreen'></i></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: yellowgreen"></i></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: red"></i></div>
+        <div><i class='fas fa-chess-knight' style='font-size:60px;color:red'></i></div>
+      </section>
+
+      <section>
+        <div><i class="fas fa-chess-rook" style="font-size: 48px; color: yellowgreen"></i></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: yellowgreen"></i></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><i class="fas fa-chess-pawn" style="font-size: 60px; color: red"></i></div>
+        <div><i class="fas fa-chess-rook" style="font-size: 48px; color: red"></i></div>
+      </section>
+    </main>
+  </body>
+</html>
