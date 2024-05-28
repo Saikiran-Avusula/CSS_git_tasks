@@ -1,0 +1,53 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        border: 1px solid;
+        display: grid;
+        padding: 10px;
+        background-color: azure;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 50px 50px 50px 150px;
+        gap: 10px;
+        /* grid-auto-rows: 50px; */
+      }
+      .cd {
+        background-color: antiquewhite;
+      }
+      .child1 {
+        grid-row: 1/4;
+      }
+      .child5,
+      .child6,
+      .child7 {
+        grid-row: 2/4;
+      }
+      .child8,
+      .child9,
+      .child10,
+      .child11 {
+        grid-row: 4/6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="child1 cd">1</div>
+      <div class="child2 cd">2</div>
+      <div class="child3 cd">3</div>
+      <div class="child4 cd">4</div>
+      <div class="child5 cd">5</div>
+      <div class="child6 cd">6</div>
+      <div class="child7 cd">7</div>
+      <div class="child8 cd">8</div>
+      <div class="child9 cd">9</div>
+      <div class="child10 cd">10</div>
+      <div class="child11 cd">11</div>
+    </div>
+  </body>
+</html>

@@ -1,26 +1,73 @@
+<!-- @format -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <style>
-      .fa-duotone {
-        font-size: 150px;
-        color: white;
-        background-color: black;
+      .main {
+        border: 1px solid;
+        display: grid;
+        width: 90%;
+        height: 100vh;
+        background-color: beige;
+        grid-template-columns: 25% 20% 20% 25%;
+        grid-template-rows: 30% 30% 30%;
+        padding: 10px;
+        /* grid-auto-rows: 100px;
+        grid-auto-columns: 100px; */
+        gap: 10px;
+      }
+      .main > div {
+        background-color: red;
+      }
+      .child1 {
+        grid-row: 1/4;
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/underwater.jpg);
+        background-repeat: no-repeat;
+        /* background-size: 150%; */
+        background-position: center;
+      }
+      .child2 {
+        grid-column: 2/4;
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 3.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position: bottom-center;
+      }
+      .child3 {
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 4.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .child6 {
+        /* grid-column-start: 4;
+        grid-row-start: 2;
+        grid-row-end: 4; */
+        grid-column: 4/5;
+        grid-row: 2/4;
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 5.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
       }
     </style>
   </head>
   <body>
-
-    <i class="fas fa-chess-pawn" style="font-size: 48px";></i>
+    <div class="main">
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+      <div class="child4">4</div>
+      <div class="child5">5</div>
+      <div class="child6">6</div>
+      <div class="child7">7</div>
+      <div class="child8">8</div>
+      <!-- <div class="child8">9</div>
+      <div class="child8">10</div> -->
+    </div>
   </body>
 </html>

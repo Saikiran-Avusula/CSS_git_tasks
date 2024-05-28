@@ -1,0 +1,93 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        border: 1px solid;
+        width: 45vw;
+        height: 60vh;
+        /* background-color: aquamarine; */
+        margin-left: 25%;
+        display: grid;
+        grid-template-columns: 15vw 15vw 15vw;
+        grid-template-rows: 30% 30% 30%;
+        gap: 5px;
+        padding: 10px;
+        color: white;
+        justify-content: center;
+        /* align-items: center; don't use items-center in grid*/
+        align-content: center;
+      }
+      .main > div {
+        border: 5px solid red;
+      }
+      .main > div:nth-child(even) {
+        background-color: rgb(216, 176, 176);
+      }
+      .main > div:nth-child(odd) {
+        background-color: rgb(169, 169, 223);
+      }
+
+      .image1 {
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 3.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .image4 {
+        /* grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 4; */
+        /* above can be also applied */
+        grid-row: 2/4;
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/underwater.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+      }
+      .image2 {
+        grid-column: 2/4;
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 9.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .image5 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 5.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .image3 {
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/avatar_g2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .image6 {
+        background-image: url(../CSS_git_tasks/multimedia_folder/images/bandmember.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="image1">1</div>
+      <div class="image2">2</div>
+      <div class="image3">3</div>
+      <div class="image4">4</div>
+      <div class="image5">5</div>
+      <div class="image6">6</div>
+    </div>
+  </body>
+</html>
