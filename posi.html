@@ -1,0 +1,38 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 80vh;
+        height: 80vh;
+        background-color: aqua;
+      }
+      section {
+        width: 20vh;
+        height: 20vh;
+        background-color: gold;
+      }
+      button:active ~ div section {
+        background-color: red;
+        transform: translate(20%);
+      }
+      /* button:active ~ div section {
+        transform: translate(20%);
+      } */
+    </style>
+  </head>
+  <button>magic</button>
+  <body>
+    <!-- <button>magic</button> -->
+    <div>
+      <section></section>
+    </div>
+
+    <!-- <button>magic</button> -->
+  </body>
+</html>

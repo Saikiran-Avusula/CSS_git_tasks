@@ -1,0 +1,69 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Transitions</title>
+    <style>
+      .child1 {
+        width: 100px;
+        height: 100px;
+        /* background-color: bisque; */
+        margin: 30px;
+        background-image: url(../multimedia_folder/images/fan\ png.png);
+      }
+      .child2 {
+        width: 100px;
+        height: 100px;
+        background-color: cadetblue;
+        margin-top: 15%;
+        margin-left: 5%;
+        /* transition: 3s; */
+        /* transition: width 3s, height 5s; */
+        /* here , comma is imp. to separate the properties */
+        /* transition: all 3s;
+        transition-timing-function: ease-in-out; */
+        /* transition-delay: 1s; */
+        /* transition-delayed in 1 sec   */
+      }
+      .child2:hover {
+        /* background-color: rgb(226, 96, 96); */
+        /* width: 200px;
+        height: 200px; */
+        /* transition: 1s; */
+        /* transform: rotate(360deg); */
+      }
+      /* .child1:hover { */
+      /* transform: translate(30px, 30px); */
+      /* transform: scale(2, 2); */
+      /* here, scale is applied then the size of x,y axis 
+        increase in 2 times of actual sizes 
+        alone we can give separe vales but as x, y as per positions*/
+
+      /* background-color: brown;
+      } */
+      button:active~.child1 {
+        /* background-color: red; */
+        transition: 1s;
+        transform: rotate(360deg);
+      }
+
+      #speed1:hover~.child2 {
+        background-color: blue;
+        transition: 3s;
+        transform: rotate(360deg); 
+      }
+    </style>
+  </head>
+  <body>
+    <button>Fan test</button>
+    <div class="child1"><img src="../multimedia_folder/images/fan png.png" width="100" alt=""></div>
+
+    <button id="speed1">Speed1</button>
+    <div class="child2"></div><br>
+    <i class='fas fa-fan' style='font-size:48px;color:red'></i>
+  </body>
+</html>

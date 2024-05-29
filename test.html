@@ -1,4 +1,5 @@
 <!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,51 +9,32 @@
     <style>
       .main {
         border: 1px solid;
-        display: grid;
-        width: 90%;
-        height: 100vh;
-        background-color: beige;
-        grid-template-columns: 25% 20% 20% 25%;
-        grid-template-rows: 30% 30% 30%;
-        padding: 10px;
-        /* grid-auto-rows: 100px;
-        grid-auto-columns: 100px; */
-        gap: 10px;
+        width: 60vw;
+        height: 60vh;
+        margin-left: 15%;
       }
-      .main > div {
+
+      .child1 {
+        border: 2px solid;
+        background-color: rgb(53, 144, 224);
+        width: 50%;
+        height: 20%;
+        /* transform: translateX(30px);
+        transform: translateY(30px); */
+        /* transform: translate(30px, 30px); */
+        /* transform: rotate(180deg); */
+        /* transform: scale(2, 2); */
+        /* transform: skewX(); */
+      }
+      .child1:hover {
+        display: block;
+      }
+      button:hover,
+      .child1:hover {
         background-color: red;
       }
-      .child1 {
-        grid-row: 1/4;
-        background-image: url(../CSS_git_tasks/multimedia_folder/images/underwater.jpg);
-        background-repeat: no-repeat;
-        /* background-size: 150%; */
-        background-position: center;
-      }
-      .child2 {
-        grid-column: 2/4;
-        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 3.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-position: bottom-center;
-      }
-      .child3 {
-        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 4.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
-      .child6 {
-        /* grid-column-start: 4;
-        grid-row-start: 2;
-        grid-row-end: 4; */
-        grid-column: 4/5;
-        grid-row: 2/4;
-        background-image: url(../CSS_git_tasks/multimedia_folder/images/asset\ 5.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+      #translate:active ~ .main .child1 {
+        transform: translate(20%);
       }
     </style>
   </head>
@@ -63,11 +45,10 @@
       <div class="child3">3</div>
       <div class="child4">4</div>
       <div class="child5">5</div>
-      <div class="child6">6</div>
-      <div class="child7">7</div>
-      <div class="child8">8</div>
-      <!-- <div class="child8">9</div>
-      <div class="child8">10</div> -->
     </div>
+    <button id="translate">translate</button>
+    <button id="scale">Scale</button>
+    <button id="rotate">Rotate</button>
+    <button id="skew">Skew</button>
   </body>
 </html>

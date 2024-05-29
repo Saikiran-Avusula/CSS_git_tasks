@@ -1,0 +1,98 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan Transitions and transformation</title>
+    <style>
+      body {
+        display: grid;
+        gap: 10px;
+        justify-content: center;
+      }
+      main {
+        border: 2px solid;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      button {
+        background-color: aliceblue;
+        margin-top: 10px;
+        background-color: antiquewhite;
+      }
+      .fan_test {
+        /* border: 1px solid; */
+        margin-top: 10px;
+        width: 100%;
+        height: 70%;
+      }
+      button:hover ~ .fan_speed1 img {
+        background-color: beige;
+        transition: 1s;
+        margin-top: 10px;
+        clip-path: circle(50%);
+        transform: rotate(360deg);
+      }
+      button:hover ~ .fan_speed2 img {
+        background-color: cadetblue;
+        transition: 2s;
+        margin-top: 10px;
+        clip-path: circle(50%);
+        transform: rotate(360deg);
+      }
+      button:hover ~ .fan_speed3 img {
+        background-color: aquamarine;
+        clip-path: circle(50%);
+        transition: 3s;
+        transform: rotate(360deg);
+        margin-top: 10px;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Fan rotation function using transition and transforms</h2>
+    <h3>Just Hover on the BUTTON</h3>
+    <main>
+      <button>Speed1</button>
+      <div class="fan_speed1">
+        <img
+          src="../CSS_git_tasks/multimedia_folder/images/fan.png"
+          width="120"
+          style="padding: 10px"
+          alt="fan"
+        />
+      </div>
+    </main>
+
+    <main>
+      <button>Speed2</button>
+      <div class="fan_speed2">
+        <img
+          src="../CSS_git_tasks/multimedia_folder/images/fan.png"
+          width="120"
+          style="padding: 10px"
+          alt="fan"
+        />
+      </div>
+    </main>
+    <main>
+      <button>Speed3</button>
+      <div class="fan_speed3">
+        <img
+          src="../CSS_git_tasks/multimedia_folder/images/fan.png"
+          width="120"
+          style="margin: 20px"
+          alt="fan"
+        />
+      </div>
+    </main>
+  </body>
+</html>
