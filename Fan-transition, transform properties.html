@@ -14,38 +14,35 @@
       }
       main {
         border: 2px solid;
-        height: 200px;
+        height: 300px;
         width: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
+      img {
+        margin: 30px;
+      }
       button {
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
         margin-top: 10px;
         background-color: antiquewhite;
       }
-      .fan_test {
-        /* border: 1px solid; */
-        margin-top: 10px;
-        width: 100%;
-        height: 70%;
-      }
-      button:hover ~ .fan_speed1 img {
+      #button1:hover ~ .fan_speed1 img {
         background-color: beige;
         transition: 1s;
         margin-top: 10px;
         clip-path: circle(50%);
         transform: rotate(360deg);
       }
-      button:hover ~ .fan_speed2 img {
+      #button2:hover ~ .fan_speed1 img {
         background-color: cadetblue;
         transition: 2s;
         margin-top: 10px;
         clip-path: circle(50%);
         transform: rotate(360deg);
       }
-      button:hover ~ .fan_speed3 img {
+      #button3:hover ~ .fan_speed1 img {
         background-color: aquamarine;
         clip-path: circle(50%);
         transition: 3s;
@@ -61,7 +58,9 @@
     <h2>Fan rotation function using transition and transforms</h2>
     <h3>Just Hover on the BUTTON</h3>
     <main>
-      <button>Speed1</button>
+      <button id="button1">Speed1</button>
+      <button id="button2">Speed2</button>
+      <button id="button3">Speed3</button>
       <div class="fan_speed1">
         <img
           src="../CSS_git_tasks/multimedia_folder/images/fan.png"
@@ -72,7 +71,7 @@
       </div>
     </main>
 
-    <main>
+    <!-- <main>
       <button>Speed2</button>
       <div class="fan_speed2">
         <img
@@ -82,8 +81,8 @@
           alt="fan"
         />
       </div>
-    </main>
-    <main>
+    </main> -->
+    <!-- <main>
       <button>Speed3</button>
       <div class="fan_speed3">
         <img
@@ -93,6 +92,6 @@
           alt="fan"
         />
       </div>
-    </main>
+    </main> -->
   </body>
 </html>
