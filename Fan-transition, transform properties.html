@@ -19,6 +19,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: beige;
       }
       img {
         margin: 30px;
@@ -28,21 +29,21 @@
         margin-top: 10px;
         background-color: antiquewhite;
       }
-      #button1:hover ~ .fan_speed1 img {
-        background-color: beige;
+      #button1:hover ~ img {
+        background-color: rgb(233, 190, 190);
         transition: 1s;
         margin-top: 10px;
         clip-path: circle(50%);
         transform: rotate(360deg);
       }
-      #button2:hover ~ .fan_speed1 img {
+      #button2:hover ~ img {
         background-color: cadetblue;
         transition: 2s;
         margin-top: 10px;
         clip-path: circle(50%);
         transform: rotate(360deg);
       }
-      #button3:hover ~ .fan_speed1 img {
+      #button3:hover ~ img {
         background-color: aquamarine;
         clip-path: circle(50%);
         transition: 3s;
@@ -57,18 +58,17 @@
   <body>
     <h2>Fan rotation function using transition and transforms</h2>
     <h3>Just Hover on the BUTTON</h3>
+    <!-- 3 buttons using function a fan speed rotation -->
     <main>
       <button id="button1">Speed1</button>
       <button id="button2">Speed2</button>
       <button id="button3">Speed3</button>
-      <div class="fan_speed1">
-        <img
-          src="../CSS_git_tasks/multimedia_folder/images/fan.png"
-          width="120"
-          style="padding: 10px"
-          alt="fan"
-        />
-      </div>
+      <img
+        src="../CSS_git_tasks/multimedia_folder/images/fan.png"
+        width="120"
+        style="padding: 10px"
+        alt="fan"
+      />
     </main>
 
     <!-- <main>
