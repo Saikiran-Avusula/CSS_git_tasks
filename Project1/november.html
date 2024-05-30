@@ -5,183 +5,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./november.css">
+
     <title>November Web Template</title>
-    <style>
-      .nav {
-        border: 1px solid;
-        background-color: rgba(0, 0, 0, 0.469);
-        width: 99%;
-        height: 8vh;
-        position: fixed;
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: red;
-      }
-      ul {
-        display: flex;
-        gap: 50px;
-      }
-      li,
-      a {
-        display: inline;
-        text-decoration: none;
-        color: white;
-      }.home,
-      .about,
-      .services,
-      .pricing,
-      .contact,
-      .map,
-      .getintouch,
-      .footer {
-        border: 1px solid;
-        width: 100%;
-        height: 100%;
-      }
-      .home {
-        margin-top: -1%;
-        /* height: 85vh; */
-        background-color: rgb(232, 228, 234);
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        gap: 20px;
-        /* background-image: url(../multimedia_folder/images/img/Banner-bg.jpg); */
-      }
-      .home_text {
-        border: 1px solid;
-        width: 20%;
-        /* height: 250px; */
-      }
-      .home_slide {
-        border: 1px solid;
-        width: 45%;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        margin-top: 10% ;
-      }
-      .slide_border {
-        border: 1px solid;
-        display: flex;
-        justify-content: end;
-        align-items: end;
-      }
-      .about_table {
-            border: 1px solid;
-            width: 40%;
-            height: 58px;
-            display: flex;
-          }
-      .mission,.vision, .sponsers {
-        border: 1px solid;
-        width: 40%;
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-        align-self: center;
-      }
-      .about {
-        /* height: 70vh; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        
-      }
-      .about_para {
-        border: 1px solid;
-        width: 55%;
-        line-height: 30px;
-        font-size: 15px ;
-        text-align: center;
-        margin-top: -35px;
-      }
-      hr {
-        border: 1px solid; 
-        color: orange; 
-        width: 20%;
-      }
-      .img_overlap {
-                border: 1px solid;
-                width: 25%;
-                /* height: 250px; */
-      }
-      .img_description {
-      border: 1px solid;
-      width: 35%;
-      }
-      .gallery_info{
-        display: flex;
-        justify-content: center;
-        gap: 60px;
-      }
-    </style>
   </head>
   <body>
-    <div class="nav">
+    <!-- header  -->
+    <header>
       <nav>
-        <p>NOVEMBER</p>
-        <ul>
-          <li><a href="#home">Home</a></li>
+        <div>
+          <h3 class="logo">NO<span class="span_logo">VEM</span>BER</h3>
+        </div>
+        <!-- header navigations -->
+        <div>
+        <ul class="navigations">
+          <li><a class="home_nav" href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#Services">Services</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        </div>
       </nav>
-    </div>
+    </header>
+
     <main class="home" id="home">
      <!-- Home text -->
       <div class="home_text">
-        <p>RESPONSIVE <br /><span>MOBILE FRIENDLY</span></p>
-        <p>
-          November is a professional website template that is responsive and
+        <p>RESPONSIVE <br/><span>MOBILE FRIENDLY</span></p>
+        <br>
+        <i>
+          November is a professional website <br> template that is responsive and
           mobile friendly for any device. This template is provided by
           templatemo.com
-        </p>
-        <button>MORE DETAILS</button>
+        </i>
+        <br><br>
+        <button id="about">MORE DETAILS</button>
       </div>
       <!-- Home slide -->
       <div class="home_slide">
         <div class="slide_border">
+  
           <p><p>LOREM QUIS BIBENDUM <br/>
             <span>Necagittis Nibel</span>
           </p></p>
         </div>
       </div>
     </main>
-    <div class="about" style="font-family: Open Sans, sans-serif;">
-      <h2>ABOUT US</h2>
+
+    <!-- about section -->
+    <!-- <div class="about" id="about">
+      <h2 class="h2_about">ABOUT US</h2>
       <p class="about_para">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit 
         amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-        <hr>
-        <div class="about_table">
+        <hr> -->
+        <!-- about goal table -->
+        <!-- <div class="about_table">
           <div class="mission">MISSION</div>
           <div class="vision">VISION</div>
           <div class="sponsers">SPONSERS</div>
-        </div>
-        <div class="gallery_info">
+        </div> -->
+        <!-- image besides text information -->
+        <!-- <div class="gallery_info">
           <div class="img_overlap">
           </div>
           <div class="img_description">
-            <p>SED AC URNA SIT AMET LOREM <br></p>
+            <p>SED AC URNA SIT AMET LOREM <br></p> <br>
             <p>SED AC URNA SIT AMET LOREM <br><span>TACITI SOCIOSQU AD LITORA TORQUENT PER CONUBIA</span></p>
             <p>November is free HTML CSS website template from templatemo and you can download and use it for any purpose. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit nunc, porta commodo euismod eu, fermentum a neque. Fusce scelerisque tincidunt auctor. Integer varius ullamcorper interdum.</p>
             <p>Phasellus pretium elementum rhoncus. Aenean sit amet odio eu ante volutpat rutrum. Vestibulum ullamcorper faucibus orci, in blandit massa fringilla at. Nulla in fermentum eros. Suspendisse vitae aliquam metus.</p>
           </div>
         </div>
+    </div> -->
+
+    <!-- services section -->
+
+    <!-- <div class="services" id="services">
+      <h2 class="h2_services">OUR SERVICES</h2>
+      <p class="services_para">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <hr> -->
+        <!-- <div class="services_cards">
+            <div class="development">
+              <div class="hover_develop">
+                <img class="development_icon" src="../multimedia_folder/images/img/develop-hover-icn.png" alt="develop-hover-icn">
+                <p class="development_icon_text">DEVELOPMENT</p>
+              </div>
+            </div>
+            <div class="design">
+              <img class="development_icon" src="../multimedia_folder/images/img/desgin-hover-icn.png" alt="design-hover-icn">
+                <p class="development_icon_text">DESGIN</p>
+            </div>
+            <div class="concept">
+              <img class="development_icon" src="../multimedia_folder/images/img/concept-hover-icn.png" alt="concept-hover-icn">
+                <p class="development_icon_text">CONCEPT</p>
+            </div>
+            <div class="system">
+              <img class="development_icon" src="../multimedia_folder/images/img/systam-hover-icn.png" alt="systam-hover-icn">
+                <p class="development_icon_text">SYSTEM</p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Pricing section -->
+    <!-- <div class="pricing" id="pricing">
+      <h2 class="h2_pricing">PRICING</h2>
+      <p class="pricing_para">All plans come with unlimited disk space. Our support can be as quick as 15 minutes to get a response. Sed non
+        mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu.</p>
+        <hr> -->
+        <!-- <div class="pricing_labels_border">
+          <div class="label1">
+            <div class="basic_label"><p class="basic_para">BASIC</p></div>
+            <div class="premimum_label">$27.50</div>
+            <div class="bandwidth_label">2,000 GB <br>BAND WIDTH</div>
+            <div class="memory_label">32 GB <br>MEMORY </div>
+            <div class="support_label">SUPPORT <br> 24 HOURS</div>
+            <div class="update_label">UPDATE <br> $20</div>
+            <div class="order_label">ORDER NOW</div>
+          </div>
+          <div class="label2">
+            <div class="basic_label"><p class="basic_para">BIZ</p></div>
+            <div class="premimum_label">$44.50</div>
+            <div class="bandwidth_label">5,500 GB <br>BAND WIDTH</div>
+            <div class="memory_label">64 GB <br>MEMORY </div>
+            <div class="support_label">SUPPORT <br> 1 HOURS</div>
+            <div class="update_label">UPDATE <br> $10</div>
+            <div class="order_label">ORDER NOW</div>
+          </div>
+          <div class="label3">
+            <div class="basic_label"><p class="basic_para">PRO</p></div>
+            <div class="premimum_label">$72.50</div>
+            <div class="bandwidth_label">12,000 GB <br>BAND WIDTH</div>
+            <div class="memory_label">12 GB <br>MEMORY </div>
+            <div class="support_label">SUPPORT <br> 15 MIN</div>
+            <div class="update_label">UPDATE <br> FREE</div>
+            <div class="order_label">ORDER NOW</div>
+          </div> -->
+        </div>
     </div>
-    <div class="services">Services</div>
-    <div class="pricing">pricing</div>
-    <div class="contact">contact</div>
-    <div class="map">map</div>
+
+    <!-- contact us section -->
+    <!-- <div class="contact" id="contact">
+      <h2 class="h2_contact">CONTACT US</h2>
+      <p class="contact_para">Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+        feugiat velit mauris egestas quamut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+        <hr>
+    </div> -->
+
+    <!-- map section -->
+    <!-- <div class="map">map</div>
     <div class="getintouch">getintouch</div>
-    <div class="footer">footer</div>
+    <div class="footer">footer</div> -->
   </body>
 </html>

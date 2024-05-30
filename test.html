@@ -7,48 +7,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .main {
-        border: 1px solid;
-        width: 60vw;
-        height: 60vh;
-        margin-left: 15%;
-      }
 
-      .child1 {
-        border: 2px solid;
-        background-color: rgb(53, 144, 224);
-        width: 50%;
-        height: 20%;
-        /* transform: translateX(30px);
-        transform: translateY(30px); */
-        /* transform: translate(30px, 30px); */
-        /* transform: rotate(180deg); */
-        /* transform: scale(2, 2); */
-        /* transform: skewX(); */
+      .pricing_labels_border{
+        /* border: 1px solid; */
+        width: 70%;
+        height: 490px;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
-      .child1:hover {
-        display: block;
+      .label1,.label2,.label3 {
+        /* border: 1px solid; */
+        height: 100px;
+        width: 100%;
+        display: flex;/
       }
-      button:hover,
-      .child1:hover {
-        background-color: red;
+      .basic_label{
+        border: 1px solid;
+        /* padding: 10px; */
+        /* height: 100%; */
+        display: flex;
+        align-items: center;
       }
-      #translate:active ~ .main .child1 {
-        transform: translate(20%);
+      .basic_para{
+        transform: rotate(270deg);
+      }
+      .premimum_label {
+        border: 1px solid;
+        /* height: 100%; */
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+
+      }
+      .bandwidth_label {
+        border: 1px solid;
+        border-left: 5px red;
+        /* height: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .memory_label{
+        border: 1px solid;
+        /* height: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 53px;
+        padding-right: 53px;
+        text-align: center;
+      }
+      .support_label{
+        border: 1px solid;
+        /* height: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+      }
+      .update_label{
+        border: 1px solid;
+        /* height: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 55px;
+        padding-right: 55px;
+        text-align: center;
+      }
+      .order_label{
+        border: 1px solid;
+        /* height: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="main">
-      <div class="child1">1</div>
-      <div class="child2">2</div>
-      <div class="child3">3</div>
-      <div class="child4">4</div>
-      <div class="child5">5</div>
+    <div class="label1">
+      <div class="basic_label"><p class="basic_para">BASIC</p></div>
+      <div class="premimum_label">$27.50</div>
+      <div class="bandwidth_label">2,000 GB <br>BAND WIDTH</div>
+      <div class="memory_label">32 GB <br>MEMORY </div>
+      <div class="support_label">SUPPORT <br> 24 HOURS</div>
+      <div class="update_label">UPDATE <br> $20</div>
+      <div class="order_label">ORDER NOW</div>
     </div>
-    <button id="translate">translate</button>
-    <button id="scale">Scale</button>
-    <button id="rotate">Rotate</button>
-    <button id="skew">Skew</button>
+    </div>
+    <div class="label2">
+      <div class="basic_label"><p class="basic_para">BIZ</p></div>
+      <div class="premimum_label">$44.50</div>
+      <div class="bandwidth_label">5,500 GB <br />BAND WIDTH</div>
+      <div class="memory_label">64 GB <br />MEMORY</div>
+      <div class="support_label">
+        SUPPORT <br />
+        1 HOURS
+      </div>
+      <div class="update_label">
+        UPDATE <br />
+        $10
+      </div>
+      <div class="order_label">ORDER NOW</div>
+    </div>
+    <!-- <div class="label3">
+      <div class="basic_label"><p class="basic_para">PRO</p></div>
+      <div class="premimum_label">$72.50</div>
+      <div class="bandwidth_label">12,000 GB <br />BAND WIDTH</div>
+      <div class="memory_label">12 GB <br />MEMORY</div>
+      <div class="support_label">
+        SUPPORT <br />
+        15 MIN
+      </div>
+      <div class="update_label">
+        UPDATE <br />
+        FREE
+      </div>
+      <div class="order_label">ORDER NOW</div>
+    </div> -->
   </body>
 </html>

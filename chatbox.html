@@ -1,305 +1,309 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatbox</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <style>
-        .main{
-            border: 6px solid;
-            width: 18vw;
-            height: 50vh;
-            position: absolute;
-            border-radius: 15px;
-            background-color: rgb(189, 250, 230);
-            left: 40%;
-            top: 9%;
-        }
-        .topbar{
-            border: 2px solid;
-            width: 100%;
-            height: 5vh;
-            position: relative;
-            left: -.5%;
-            top: -.5%;
-            box-shadow: 1px 1px 5px;
-            background-color: rgb(252, 246, 246);
-            border-radius: 10px 10px 15px 15px;
-        }
-        .chat {
-            border: 1px solid;
-            position: relative;
-            height: 41.5vh;
-            top: -1%;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            border: hidden;
-            /* border: hidden; */
-        }
-        h3{
-            position: sticky;
-            /* position: relative; */
-            top: 15px;
-            color: red;
-            right: -39%;
-            margin-bottom: -5%;
-            margin-left: 35%;
-            border: 1px solid black;
-            border-radius: 8px;
-            width: 5.5vw;
-            text-align: center;
-        }
-        .box2{
-            position: relative;
-            right: -80%;
-        }
-        .box4 {
-            position: relative;
-            right: -40%;
-        }
-        .box6 {
-            position: relative;
-            right: -50%;
-        }
-        .box8 {
-            position: relative;
-            right: -45%;
-        }
-        .box11 {
-            position: relative;
-            right: -45%;
-        }
-        .box12 {
-            position: relative;
-            right:-18% ;
-        }
-        .box14{
-            position: relative;
-            right: -15%;
-        }
-        .box16 {
-            position: relative;
-            right: -35%;
-        }
-        .box18{
-            position: relative;
-            right: -15%;
-        }
-        .box20 {
-            position: relative;
-            right: -15%;
-        }
-        .box22 {
-            position: relative;
-            right: -51%;
-        }
-        .box24 {
-            position: relative;
-            right: -53%;
-        }
-        .box26 {
-            position: relative;
-            right: -9%;
-        }
-        .box28 {
-            position: relative;
-            right: -53%;
-        }
-        .left {
-            position: relative;
-            right: -10%;
-            top: 13%;
-            font-size: 25px;
-        }
-        .name {
-            position: relative;
-            right: -25%;
-            top: -45%;
-            font-size: 20px;
-        }
-        .call {
-            position: relative;
-            top: -100%;
-            right: -60%;
-            font-size:18px;
-        }
-        .video{
-            position: relative;
-            top: -165%;
-            font-size: 21px;
-            right: -70%;
-        }
-        .info{
-            position: relative;
-            top: -210%;
-            font-size: 21px;
-            right: -85%;
-        }
-        .clip{
-            position: relative;
-            right: -8%;
-        }
-        .textbox{
-            position: relative;
-            color: red;
-            left: 20%;
-            bottom: 20px;
-            border: 2px solid;
-            border-radius: 10px;
-            width: 10vw;
-            text-align: center;
-            bottom: 18px;
-        }
-        .material-icons {
-            position: relative;
-            color: green;
-            bottom: 44px;
-            right: -85%;
-        }
-        .text{
-            position: relative;
-            border: 2px solid;
-            border-radius: 8px;
-            box-shadow: 1px -1px 2px;
-            border: none;
-            height: 3vh;
-            top: 0.8%;
-            background-color: rgb(252, 246, 246);
-        }
+      .main {
+        border: 6px solid;
+        width: 18vw;
+        height: 50vh;
+        position: absolute;
+        border-radius: 15px;
+        background-color: rgb(189, 250, 230);
+        left: 40%;
+        top: 9%;
+      }
+      .topbar {
+        border: 2px solid;
+        width: 100%;
+        height: 5vh;
+        position: relative;
+        left: -0.5%;
+        top: -0.5%;
+        box-shadow: 1px 1px 5px;
+        background-color: rgb(252, 246, 246);
+        border-radius: 10px 10px 15px 15px;
+      }
+      .chat {
+        border: 1px solid;
+        position: relative;
+        height: 41.5vh;
+        top: -1%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border: hidden;
+        /* border: hidden; */
+      }
+      h3 {
+        position: sticky;
+        /* position: relative; */
+        top: 15px;
+        color: red;
+        right: -39%;
+        margin-bottom: -5%;
+        margin-left: 35%;
+        border: 1px solid black;
+        border-radius: 8px;
+        width: 5.5vw;
+        text-align: center;
+      }
+      .box2 {
+        position: relative;
+        right: -80%;
+      }
+      .box4 {
+        position: relative;
+        right: -40%;
+      }
+      .box6 {
+        position: relative;
+        right: -50%;
+      }
+      .box8 {
+        position: relative;
+        right: -45%;
+      }
+      .box11 {
+        position: relative;
+        right: -45%;
+      }
+      .box12 {
+        position: relative;
+        right: -18%;
+      }
+      .box14 {
+        position: relative;
+        right: -15%;
+      }
+      .box16 {
+        position: relative;
+        right: -35%;
+      }
+      .box18 {
+        position: relative;
+        right: -15%;
+      }
+      .box20 {
+        position: relative;
+        right: -15%;
+      }
+      .box22 {
+        position: relative;
+        right: -51%;
+      }
+      .box24 {
+        position: relative;
+        right: -53%;
+      }
+      .box26 {
+        position: relative;
+        right: -9%;
+      }
+      .box28 {
+        position: relative;
+        right: -53%;
+      }
+      .left {
+        position: relative;
+        right: -10%;
+        top: 13%;
+        font-size: 25px;
+      }
+      .name {
+        position: relative;
+        right: -25%;
+        top: -45%;
+        font-size: 20px;
+      }
+      .call {
+        position: relative;
+        top: -100%;
+        right: -60%;
+        font-size: 18px;
+      }
+      .video {
+        position: relative;
+        top: -165%;
+        font-size: 21px;
+        right: -70%;
+      }
+      .info {
+        position: relative;
+        top: -210%;
+        font-size: 21px;
+        right: -85%;
+      }
+      .clip {
+        position: relative;
+        right: -8%;
+      }
+      .textbox {
+        position: relative;
+        color: red;
+        left: 20%;
+        bottom: 20px;
+        border: 2px solid;
+        border-radius: 10px;
+        width: 10vw;
+        text-align: center;
+        bottom: 18px;
+      }
+      .material-icons {
+        position: relative;
+        color: green;
+        bottom: 44px;
+        right: -85%;
+      }
+      .text {
+        position: relative;
+        border: 2px solid;
+        border-radius: 8px;
+        box-shadow: 1px -1px 2px;
+        border: none;
+        height: 3vh;
+        top: 0.8%;
+        background-color: rgb(252, 246, 246);
+      }
     </style>
-</head>
-<body>
-    <h2 style="text-align: center;">Chatbox UI Using Positions</h2>
+  </head>
+  <body>
+    <h2 style="text-align: center">Chatbox UI Using Positions</h2>
     <div class="main">
-        <div class="topbar">
-            <section class="left">⬅</section>
-            <section class="name">10k Coders</section>
-            <section class="call">📞</section>
-            <section class="video">📹</section>
-            <section class="info">ℹ️</section> 
+      <div class="topbar">
+        <section class="left">⬅</section>
+        <section class="name">10k Coders</section>
+        <section class="call">📞</section>
+        <section class="video">📹</section>
+        <section class="info">ℹ️</section>
+      </div>
+      <div class="chat">
+        <div>
+          <h3>15/06/2024</h3>
+          <section class="box1">
+            <p>Hi👋🏻</p>
+          </section>
+          <section class="box2">
+            <p>Hello🤝</p>
+          </section>
+          <section class="box3">
+            <p>How are you?</p>
+          </section>
+          <section class="box4">
+            <p>I'm Fine. How about you?</p>
+          </section>
         </div>
-        <div class="chat">
-            <div>
-                <h3>15/06/2024</h3>
-                <section class="box1">
-                    <p>Hi👋🏻</p>
-                </section>
-                <section class="box2">
-                    <p>Hello🤝</p>
-                </section>
-                <section class="box3">
-                    <p>How are you?</p>
-                </section>
-                <section class="box4">
-                    <p>I'm Fine. How about you?</p>
-                </section>
-            </div>
 
-            <div>
-                <h3>16/05/2024</h3>
-                <section class="box5">
-                    <p>I'm good...!</p>
-                </section>
-                <section class="box6">
-                    <p>How was you job ?</p>
-                </section>
-            </div>
-
-            <div>
-                <h3>17/05/2024</h3>
-                <section class="box7">
-                    <p>Too good Bro! Besides, that I got an increment this month.</p>
-                </section>
-                <section class="box8">
-                    <p>Ohho!Congrats dude!🎉</p>
-                </section>
-                <section class="box9">
-                    <p>Thanks bro!😁.</p>
-                </section>
-            </div>
-
-            <div>
-                <h3>18/05/2024</h3>
-                <section class="box10">
-                    <p>By the was the business thing? How is it going?</p>
-                </section>
-                <section class="box11">
-                    <p>Well. Going good.!👍🏻</p>
-                </section>
-            </div>
-
-            <div>
-                <h3>19/05/2024</h3>
-                <section class="box12">
-                    <p>Any exciting plans for the weekend?</p>
-                </section>
-                <section class="box13">
-                    <p>Yeah, I’m going hiking with friends.</p>
-                </section>
-                <section class="box14">
-                    <p>Awesome! Which trail are you taking?</p>
-                </section>
-                <section class="box15">
-                    <p>The one near Blue Lake.</p>
-                </section>
-            </div>
-
-            <div>
-                <h3>20/05/2024</h3>
-                <h3></h3>
-                <section class="box16">
-                    <p> Oh, I’ve heard it’s beautiful.</p>
-                </section>
-                <section class="box17">
-                    <p>Absolutely! Can’t wait.</p>
-                </section>
-                <section class="box18">
-                    <p> By the way, did you finish that report?</p>
-                </section>
-                <section class="box19">
-                    <p>Almost done, just need proofreading.</p>
-                </section>
-                <section class="box20">
-                    <p>Great! Let’s meet tomorrow to review.</p>
-                </section>
-                <br><br><br>
-            </div>
-
-            <h3>Yesterday</h3>
-            <section class="box21">
-                <p>Sounds good. Coffee shop at noon?</p>
-            </section>
-            <section class="box22">
-                <p>Perfect! See you then.</p>
-            </section>
-            <section class="box23">
-                <p>Hey, did you catch the game?</p>
-            </section>
-            <section class="box24">
-                <p>Yeah, our team won!</p>
-            </section>
-            <section class="box25">
-                <p>Woohoo! Go team!</p>
-            </section>
-
-            <h3>Today</h3>
-            <section class="box26">
-                <p> Speaking of sports, tennis this weekend?</p>
-            </section>
-            <section class="box27">
-                <p>Definitely! I’ll bring my racket.</p>
-            </section>
-            <section class="box28">
-                <p> Awesome! Game on!</p>
-            </section>
+        <div>
+          <h3>16/05/2024</h3>
+          <section class="box5">
+            <p>I'm good...!</p>
+          </section>
+          <section class="box6">
+            <p>How was you job ?</p>
+          </section>
         </div>
-        <div class="text">
-            <section class="clip">🔗</section>
-            <section class="textbox">Type your text...</section>
-            <i class="material-icons" style="font-size:26px">send</i>
+
+        <div>
+          <h3>17/05/2024</h3>
+          <section class="box7">
+            <p>Too good Bro! Besides, that I got an increment this month.</p>
+          </section>
+          <section class="box8">
+            <p>Ohho!Congrats dude!🎉</p>
+          </section>
+          <section class="box9">
+            <p>Thanks bro!😁.</p>
+          </section>
         </div>
-        
+
+        <div>
+          <h3>18/05/2024</h3>
+          <section class="box10">
+            <p>By the was the business thing? How is it going?</p>
+          </section>
+          <section class="box11">
+            <p>Well. Going good.!👍🏻</p>
+          </section>
+        </div>
+
+        <div>
+          <h3>19/05/2024</h3>
+          <section class="box12">
+            <p>Any exciting plans for the weekend?</p>
+          </section>
+          <section class="box13">
+            <p>Yeah, I’m going hiking with friends.</p>
+          </section>
+          <section class="box14">
+            <p>Awesome! Which trail are you taking?</p>
+          </section>
+          <section class="box15">
+            <p>The one near Blue Lake.</p>
+          </section>
+        </div>
+
+        <div>
+          <h3>20/05/2024</h3>
+          <h3></h3>
+          <section class="box16">
+            <p>Oh, I’ve heard it’s beautiful.</p>
+          </section>
+          <section class="box17">
+            <p>Absolutely! Can’t wait.</p>
+          </section>
+          <section class="box18">
+            <p>By the way, did you finish that report?</p>
+          </section>
+          <section class="box19">
+            <p>Almost done, just need proofreading.</p>
+          </section>
+          <section class="box20">
+            <p>Great! Let’s meet tomorrow to review.</p>
+          </section>
+          <br /><br /><br />
+        </div>
+
+        <h3>Yesterday</h3>
+        <section class="box21">
+          <p>Sounds good. Coffee shop at noon?</p>
+        </section>
+        <section class="box22">
+          <p>Perfect! See you then.</p>
+        </section>
+        <section class="box23">
+          <p>Hey, did you catch the game?</p>
+        </section>
+        <section class="box24">
+          <p>Yeah, our team won!</p>
+        </section>
+        <section class="box25">
+          <p>Woohoo! Go team!</p>
+        </section>
+
+        <h3>Today</h3>
+        <section class="box26">
+          <p>Speaking of sports, tennis this weekend?</p>
+        </section>
+        <section class="box27">
+          <p>Definitely! I’ll bring my racket.</p>
+        </section>
+        <section class="box28">
+          <p>Awesome! Game on!</p>
+        </section>
+      </div>
+      <div class="text">
+        <section class="clip">🔗</section>
+        <section class="textbox">Type your text...</section>
+        <i class="material-icons" style="font-size: 26px">send</i>
+      </div>
     </div>
-</body>
+  </body>
 </html>
