@@ -5,8 +5,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./november.css">
-
+    <link rel="stylesheet" href="./november.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>November Web Template</title>
   </head>
   <body>
@@ -18,143 +23,234 @@
         </div>
         <!-- header navigations -->
         <div>
-        <ul class="navigations">
-          <li><a class="home_nav" href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+          <ul class="navigation">
+            <li><a class="home_nav" href="#home">Home</a></li>
+            <li><a class="h_about" href="#about">About</a></li>
+            <li><a class="h_services" href="#services">Services</a></li>
+            <li><a class="h_pricing" href="#pricing">Pricing</a></li>
+            <li><a class="h_contact" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </nav>
     </header>
 
     <main class="home" id="home">
-     <!-- Home text -->
+      <!-- Home text -->
       <div class="home_text">
-        <p>RESPONSIVE <br/><span>MOBILE FRIENDLY</span></p>
-        <br>
+        <p>RESPONSIVE <br /><span>MOBILE FRIENDLY</span></p>
+        <br />
         <i>
-          November is a professional website <br> template that is responsive and
-          mobile friendly for any device. This template is provided by
-          templatemo.com
+          November is a professional website <br />
+          template that is responsive and mobile friendly for any device. This
+          template is provided by templatemo.com
         </i>
-        <br><br>
-        <button id="about">MORE DETAILS</button>
+        <br /><br />
+        <button>
+          <a href="#about" style="color: white; text-decoration: none"
+            >MORE DETAILS</a
+          >
+        </button>
       </div>
       <!-- Home slide -->
       <div class="home_slide">
         <div class="slide_border">
-  
-          <p><p>LOREM QUIS BIBENDUM <br/>
-            <span>Necagittis Nibel</span>
-          </p></p>
+          <div class="slide_icons">
+            <ul class="heart_circle">
+              <li>
+                <ion-icon
+                  class="heart-circle-outline"
+                  name="heart-circle-outline"
+                  style="font-size: 45px"
+                ></ion-icon>
+              </li>
+              <li>700</li>
+            </ul>
+            <ul class="cloud_circle">
+              <li>
+                <ion-icon
+                  class="cloud-circle-outline"
+                  name="cloud-circle-outline"
+                  style="font-size: 45px"
+                ></ion-icon>
+              </li>
+              <li>150</li>
+            </ul>
+          </div>
+          <div>
+            <p>LOREM QUIS BIBENDUM</p>
+            <span style="color: #ff9000; margin-left: 60px"
+              >Necagittis Nibel</span
+            >
+          </div>
         </div>
       </div>
     </main>
 
     <!-- about section -->
-    <!-- <div class="about" id="about">
-      <h2 class="h2_about">ABOUT US</h2>
-      <p class="about_para">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit 
-        amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-        <hr> -->
-        <!-- about goal table -->
-        <!-- <div class="about_table">
-          <div class="mission">MISSION</div>
-          <div class="vision">VISION</div>
-          <div class="sponsers">SPONSERS</div>
-        </div> -->
-        <!-- image besides text information -->
-        <!-- <div class="gallery_info">
-          <div class="img_overlap">
-          </div>
-          <div class="img_description">
-            <p>SED AC URNA SIT AMET LOREM <br></p> <br>
-            <p>SED AC URNA SIT AMET LOREM <br><span>TACITI SOCIOSQU AD LITORA TORQUENT PER CONUBIA</span></p>
-            <p>November is free HTML CSS website template from templatemo and you can download and use it for any purpose. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit nunc, porta commodo euismod eu, fermentum a neque. Fusce scelerisque tincidunt auctor. Integer varius ullamcorper interdum.</p>
-            <p>Phasellus pretium elementum rhoncus. Aenean sit amet odio eu ante volutpat rutrum. Vestibulum ullamcorper faucibus orci, in blandit massa fringilla at. Nulla in fermentum eros. Suspendisse vitae aliquam metus.</p>
-          </div>
-        </div>
-    </div> -->
+    <div class="about" id="about">
+      <h2 class="h2_abot">ABOUT US</h2>
+      <p class="about_para">
+        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+        ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+        vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
+        tellus a odio tincidunt auctor a ornare odio.
+      </p>
+      <hr />
+      <!-- about goal table -->
+      <div>
+        <ul class="nov_goals">
+          <li>
+            <a class="a_mission" href="./mission.html" target="goals" checked
+              >MISSION</a
+            >
+          </li>
+          <li>
+            <a class="a_vision" href="./vision.html" target="goals">VISION</a>
+          </li>
+          <li>
+            <a class="a_sponsers" href="./sponsers.html" target="goals"
+              >SPONSERS</a
+            >
+          </li>
+        </ul>
+        <style></style>
+      </div>
+      <!-- image besides text information -->
+      <div class="about_frame">
+        <div class="about_photo"></div>
+
+        <!-- <div class="photos_overlap">
+                <div class="photo1"></div>
+                <div class="photo2"></div> -->
+        <div><iframe src="" frameborder="0" name="goals"></iframe></div>
+      </div>
+    </div>
 
     <!-- services section -->
 
-    <!-- <div class="services" id="services">
+    <div class="services" id="services">
       <h2 class="h2_services">OUR SERVICES</h2>
-      <p class="services_para">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-        <hr> -->
-        <!-- <div class="services_cards">
-            <div class="development">
-              <div class="hover_develop">
-                <img class="development_icon" src="../multimedia_folder/images/img/develop-hover-icn.png" alt="develop-hover-icn">
-                <p class="development_icon_text">DEVELOPMENT</p>
-              </div>
-            </div>
-            <div class="design">
-              <img class="development_icon" src="../multimedia_folder/images/img/desgin-hover-icn.png" alt="design-hover-icn">
-                <p class="development_icon_text">DESGIN</p>
-            </div>
-            <div class="concept">
-              <img class="development_icon" src="../multimedia_folder/images/img/concept-hover-icn.png" alt="concept-hover-icn">
-                <p class="development_icon_text">CONCEPT</p>
-            </div>
-            <div class="system">
-              <img class="development_icon" src="../multimedia_folder/images/img/systam-hover-icn.png" alt="systam-hover-icn">
-                <p class="development_icon_text">SYSTEM</p>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- Pricing section -->
-    <!-- <div class="pricing" id="pricing">
-      <h2 class="h2_pricing">PRICING</h2>
-      <p class="pricing_para">All plans come with unlimited disk space. Our support can be as quick as 15 minutes to get a response. Sed non
-        mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu.</p>
-        <hr> -->
-        <!-- <div class="pricing_labels_border">
-          <div class="label1">
-            <div class="basic_label"><p class="basic_para">BASIC</p></div>
-            <div class="premimum_label">$27.50</div>
-            <div class="bandwidth_label">2,000 GB <br>BAND WIDTH</div>
-            <div class="memory_label">32 GB <br>MEMORY </div>
-            <div class="support_label">SUPPORT <br> 24 HOURS</div>
-            <div class="update_label">UPDATE <br> $20</div>
-            <div class="order_label">ORDER NOW</div>
+      <p class="services_para">
+        Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+        ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos.
+      </p>
+      <hr />
+      <div class="services_cards">
+        <!-- card 1 -->
+        <div class="development">
+          <div class="hover_develop">
+            <img
+              class="development_icon"
+              src="../multimedia_folder/images/img/develop-hover-icn.png"
+              alt="develop-hover-icn"
+            />
+            <p class="development_icon_text">DEVELOPMENT</p>
           </div>
-          <div class="label2">
-            <div class="basic_label"><p class="basic_para">BIZ</p></div>
-            <div class="premimum_label">$44.50</div>
-            <div class="bandwidth_label">5,500 GB <br>BAND WIDTH</div>
-            <div class="memory_label">64 GB <br>MEMORY </div>
-            <div class="support_label">SUPPORT <br> 1 HOURS</div>
-            <div class="update_label">UPDATE <br> $10</div>
-            <div class="order_label">ORDER NOW</div>
-          </div>
-          <div class="label3">
-            <div class="basic_label"><p class="basic_para">PRO</p></div>
-            <div class="premimum_label">$72.50</div>
-            <div class="bandwidth_label">12,000 GB <br>BAND WIDTH</div>
-            <div class="memory_label">12 GB <br>MEMORY </div>
-            <div class="support_label">SUPPORT <br> 15 MIN</div>
-            <div class="update_label">UPDATE <br> FREE</div>
-            <div class="order_label">ORDER NOW</div>
-          </div> -->
         </div>
+        <!-- card 2 -->
+        <div class="design">
+          <div class="hover_develop">
+            <img
+              class="development_icon"
+              src="../multimedia_folder/images/img/desgin-hover-icn.png"
+              alt="design-hover-icn"
+            />
+            <p class="development_icon_text">DESGIN</p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="concept">
+          <div class="hover_develop">
+            <img
+              class="development_icon"
+              src="../multimedia_folder/images/img/concept-hover-icn.png"
+              alt="concept-hover-icn"
+            />
+            <p class="development_icon_text">CONCEPT</p>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="system">
+          <div class="hover_develop">
+            <img
+              class="development_icon"
+              src="../multimedia_folder/images/img/systam-hover-icn.png"
+              alt="systam-hover-icn"
+            />
+            <p class="development_icon_text">SYSTEM</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- contact us section -->
-    <!-- <div class="contact" id="contact">
-      <h2 class="h2_contact">CONTACT US</h2>
-      <p class="contact_para">Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
-        feugiat velit mauris egestas quamut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-        <hr>
-    </div> -->
+    <!-- Pricing section -->
+    <div class="pricing" id="pricing">
+      <h2 class="h2_pricing">PRICING</h2>
+      <p class="pricing_para">
+        All plans come with unlimited disk space. Our support can be as quick as
+        15 minutes to get a response. Sed non mauris vitae erat consequat auctor
+        eu in elit. Class aptent taciti sociosqu.
+      </p>
+      <hr />
+      <div class="pricing_labels_border">
+        <div class="label1">
+          <div class="basic_label"><p class="basic_para">BASIC</p></div>
+          <div class="premimum_label">$27.50</div>
+          <div class="bandwidth_label">2,000 GB <br />BAND WIDTH</div>
+          <div class="memory_label">32 GB <br />MEMORY</div>
+          <div class="support_label">
+            SUPPORT <br />
+            24 HOURS
+          </div>
+          <div class="update_label">
+            UPDATE <br />
+            $20
+          </div>
+          <div class="order_label">ORDER NOW</div>
+        </div>
+        <div class="label2">
+          <div class="basic_label"><p class="basic_para">BIZ</p></div>
+          <div class="premimum_label">$44.50</div>
+          <div class="bandwidth_label">5,500 GB <br />BAND WIDTH</div>
+          <div class="memory_label">64 GB <br />MEMORY</div>
+          <div class="support_label">
+            SUPPORT <br />
+            1 HOURS
+          </div>
+          <div class="update_label">
+            UPDATE <br />
+            $10
+          </div>
+          <div class="order_label">ORDER NOW</div>
+        </div>
+        <div class="label3">
+          <div class="basic_label"><p class="basic_para">PRO</p></div>
+          <div class="premimum_label">$72.50</div>
+          <div class="bandwidth_label">12,000 GB <br />BAND WIDTH</div>
+          <div class="memory_label">12 GB <br />MEMORY</div>
+          <div class="support_label">
+            SUPPORT <br />
+            15 MIN
+          </div>
+          <div class="update_label">
+            UPDATE <br />
+            FREE
+          </div>
+          <div class="order_label">ORDER NOW</div>
+        </div>
+      </div>
+    </div>
 
-    <!-- map section -->
-    <!-- <div class="map">map</div>
-    <div class="getintouch">getintouch</div>
-    <div class="footer">footer</div> -->
+    <!-- ion iconic script tags -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

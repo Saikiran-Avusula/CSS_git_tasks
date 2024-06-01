@@ -7,135 +7,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      /* section {
+        display: flex;
+        justify-content: center;
+      }
+      table {
+        border: 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+      }
+      td {
+        border: 1px solid;
+        padding: 30px;
+        font-size: 16px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .basic {
+        border-color: black;
+        transform: rotate(-90deg);
+        padding: 0;
+        font-size: 17px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        border: 1px solid;
+        color: black;
+      }
+      .basic + td {
+        font-size: 34px;
+        color: orange;
+        border-color: black;
+        background-color: black;
+      } */
 
-      .pricing_labels_border{
-        /* border: 1px solid; */
-        width: 70%;
-        height: 490px;
-        padding-top: 80px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-      .label1,.label2,.label3 {
-        /* border: 1px solid; */
-        height: 100px;
-        width: 100%;
-        display: flex;/
-      }
-      .basic_label{
+      /* usiing flex */
+      section > div {
         border: 1px solid;
-        /* padding: 10px; */
-        /* height: 100%; */
-        display: flex;
-        align-items: center;
+        /* width: 60%; */
       }
-      .basic_para{
-        transform: rotate(270deg);
-      }
-      .premimum_label {
-        border: 1px solid;
-        /* height: 100%; */
-        padding-left: 60px;
-        padding-right: 60px;
+      section {
         display: flex;
+        justify-content: center;
+      }
+      .pricing_border {
+        display: flex;
+        justify-content: center;
         font-size: 25px;
-        align-items: center;
-
+        /* align-items: center; */
+        /* padding: 10px; */
       }
-      .bandwidth_label {
-        border: 1px solid;
-        border-left: 5px red;
-        /* height: 100%; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-left: 50px;
-        padding-right: 50px;
-      }
-      .memory_label{
-        border: 1px solid;
-        /* height: 100%; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 53px;
-        padding-right: 53px;
+      .pricing_border div {
+        /* border: 1px solid black; */
+        padding: 20px;
         text-align: center;
       }
-      .support_label{
-        border: 1px solid;
-        /* height: 100%; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 50px;
-        padding-right: 50px;
-        text-align: center;
+      .pricing_border > .basic {
+        transform: rotate(-90deg);
+        align-content: center;
+        color: white;
+        background-color: black;
       }
-      .update_label{
-        border: 1px solid;
-        /* height: 100%; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 55px;
-        padding-right: 55px;
-        text-align: center;
+      .basic_price,
+      .order {
+        margin-top: 10px;
+        color: red;
       }
-      .order_label{
-        border: 1px solid;
-        /* height: 100%; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 40px;
-        padding-right: 40px;
-        text-align: center;
-      }
+      /* add border to the 32bg   support 24hrs only left and right */
     </style>
   </head>
   <body>
-    <div class="label1">
-      <div class="basic_label"><p class="basic_para">BASIC</p></div>
-      <div class="premimum_label">$27.50</div>
-      <div class="bandwidth_label">2,000 GB <br>BAND WIDTH</div>
-      <div class="memory_label">32 GB <br>MEMORY </div>
-      <div class="support_label">SUPPORT <br> 24 HOURS</div>
-      <div class="update_label">UPDATE <br> $20</div>
-      <div class="order_label">ORDER NOW</div>
-    </div>
-    </div>
-    <div class="label2">
-      <div class="basic_label"><p class="basic_para">BIZ</p></div>
-      <div class="premimum_label">$44.50</div>
-      <div class="bandwidth_label">5,500 GB <br />BAND WIDTH</div>
-      <div class="memory_label">64 GB <br />MEMORY</div>
-      <div class="support_label">
-        SUPPORT <br />
-        1 HOURS
+    <section>
+      <div class="pricing_border">
+        <div class="basic">Basic</div>
+        <div class="basic_price">$27.50</div>
+        <div>2,000GB<br />BANDWIDTH</div>
+        <div>32GB <br />MEMORY</div>
+        <div>SUPPORT <br />24 HORUS</div>
+        <div>UPDATE <br />$20</div>
+        <div class="order">ORDER NOW</div>
       </div>
-      <div class="update_label">
-        UPDATE <br />
-        $10
-      </div>
-      <div class="order_label">ORDER NOW</div>
-    </div>
-    <!-- <div class="label3">
-      <div class="basic_label"><p class="basic_para">PRO</p></div>
-      <div class="premimum_label">$72.50</div>
-      <div class="bandwidth_label">12,000 GB <br />BAND WIDTH</div>
-      <div class="memory_label">12 GB <br />MEMORY</div>
-      <div class="support_label">
-        SUPPORT <br />
-        15 MIN
-      </div>
-      <div class="update_label">
-        UPDATE <br />
-        FREE
-      </div>
-      <div class="order_label">ORDER NOW</div>
-    </div> -->
+
+      <!-- <table>
+        <td class="basic">Basic</td>
+        <td>$27.50</td>
+        <td>
+          2,000 <br />
+          BANDWIDTH
+        </td>
+        <td>32gb <br />memory</td>
+        <td>
+          support <br />
+          24 hours
+        </td>
+        <td>
+          update <br />
+          $20
+        </td>
+        <td>order noow</td>
+      </table> -->
+    </section>
   </body>
 </html>
