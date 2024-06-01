@@ -5,111 +5,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>test</title>
     <style>
-      /* section {
+      .getintouch {
+        background-color: #f0f0f0;
         display: flex;
-        justify-content: center;
-      }
-      table {
         border: 1px solid;
-        border-collapse: collapse;
-        text-align: center;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-      }
-      td {
-        border: 1px solid;
-        padding: 30px;
-        font-size: 16px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
-      }
-      .basic {
-        border-color: black;
-        transform: rotate(-90deg);
-        padding: 0;
-        font-size: 17px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
-        border: 1px solid;
-        color: black;
-      }
-      .basic + td {
-        font-size: 34px;
-        color: orange;
-        border-color: black;
-        background-color: black;
-      } */
-
-      /* usiing flex */
-      section > div {
-        border: 1px solid;
-        /* width: 60%; */
-      }
-      section {
-        display: flex;
-        justify-content: center;
-      }
-      .pricing_border {
-        display: flex;
-        justify-content: center;
-        font-size: 25px;
         /* align-items: center; */
-        /* padding: 10px; */
+        /* justify-content: center; */
       }
-      .pricing_border div {
-        /* border: 1px solid black; */
-        padding: 20px;
-        text-align: center;
+      .form {
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 30vw;
+        margin-left: 200px;
       }
-      .pricing_border > .basic {
-        transform: rotate(-90deg);
-        align-content: center;
+
+      input {
+        width: 85%;
+        height: 20px;
+        padding: 10px;
+      }
+      button{
+        width: 90%;
+        height: 50px;
+        background-color: #ff9100;
         color: white;
-        background-color: black;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
       }
-      .basic_price,
-      .order {
-        margin-top: 10px;
-        color: red;
+      .connect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
       }
-      /* add border to the 32bg   support 24hrs only left and right */
+      input[name="message"] {
+        /* background-color: red; */
+        height: 150px;
+      }
+      /* media address section  */
+      .media {
+        border: 1px solid;
+      }
+      .mail
+            {
+              display: flex;
+              align-items: center;
+              gap: 20px
+            }
+      .media_icons {
+        padding-top: 30px;
+      }
     </style>
   </head>
   <body>
-    <section>
-      <div class="pricing_border">
-        <div class="basic">Basic</div>
-        <div class="basic_price">$27.50</div>
-        <div>2,000GB<br />BANDWIDTH</div>
-        <div>32GB <br />MEMORY</div>
-        <div>SUPPORT <br />24 HORUS</div>
-        <div>UPDATE <br />$20</div>
-        <div class="order">ORDER NOW</div>
-      </div>
+    <section class="getintouch">
+      <form action="./november.html">
+        <div class="form">
+            <label for="name"
+              ><input type="text" name="name" id="name" placeholder="NAME" /></label>
+            <label for="mail"
+              ><input
+                type="email"
+                id="mail"
+                name="mail"
+                placeholder="EMAIL" /></label>
+            <label for="title">
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="TITLE"
+              /> </label>
+            <label for="message">
+              <input
+                type="text"
+                name="message"
+                id="message"
+                placeholder="MESSAGE"
+              />
+            </label>
+            <!-- <input type="button" value="SEND" formaction="../CSS_git_tasks/Project1/november.html"> -->
+            <button formaction="../CSS_git_tasks/Project1/november.html">SEND</button>
+          </form>
+        </div>
 
-      <!-- <table>
-        <td class="basic">Basic</td>
-        <td>$27.50</td>
-        <td>
-          2,000 <br />
-          BANDWIDTH
-        </td>
-        <td>32gb <br />memory</td>
-        <td>
-          support <br />
-          24 hours
-        </td>
-        <td>
-          update <br />
-          $20
-        </td>
-        <td>order noow</td>
-      </table> -->
+        <!-- media information -->
+        <div class="media">
+          <h2 class="h2_getintouch">GET IN TOUCH!</h2>
+
+           <div class="connect">
+            <ion-icon name="map-outline" style="font-size: 30px;"></ion-icon>
+            <p>990 Proin Gravida Street, Aliquet Snean Tate,<br>
+              Lincoln Way, San Francisco, California.</p>
+           </div>
+           <div class="connect">
+            <ion-icon name="call" style="font-size: 30px;"></ion-icon>
+            <p>(+001) 001 002 0034, (+002) 009 008 0760 <br>
+              (+003) 456 050 0670</p>
+           </div>
+           <div class="mail">
+            <ion-icon name="mail-outline" style="font-size: 30px;"></ion-icon>
+            <p>info@november.com</p>
+           </div>
+
+           <!-- media icons -->
+           <div class="media_icons">
+            <img src="../multimedia_folder/images/img/facebook-icn.png" alt="facebook-icn">
+            <img src="../multimedia_folder/images/img/twitter-icn.png" alt="twitter-icn">
+            <img src="../multimedia_folder/images/img/google-plus-icn.png" alt="google-plus-icn">
+           </div>
+        </div>
     </section>
+    
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+
   </body>
 </html>

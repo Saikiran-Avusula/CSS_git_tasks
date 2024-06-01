@@ -6,7 +6,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    }
 
-   .h2_about, .h2_pricing, .h2_services{
+   .h2_about, .h2_pricing, .h2_services, .h2_contact, .h2_getintouch{
    font-family: "Oswald", sans-serif;
    }
 
@@ -72,10 +72,10 @@ li>a {
  /* .home, */
  /* .about, */
  /* .services, */
- .pricing,
- .contact,
- .map,
- .getintouch,
+ /* .pricing, */
+ /* .contact, */
+ /* .map, */
+ /* .getintouch, */
  .footer {
    border: 1px solid;
    width: 100%;
@@ -207,7 +207,7 @@ i~button:hover {
   font-family: "Oswald", sans-serif;
  }
  .about_para {
-   border: 1px solid;
+   /* border: 1px solid; */
    width: 55%;
    font-size: 15px ;
    padding: 24px 0px 35px;
@@ -267,6 +267,7 @@ iframe {
   height: 265px;
   margin-top: -8px;
 }
+
 /* .about_photo{
   border: 1px solid; */
   /* position: absolute; }*/
@@ -376,13 +377,12 @@ iframe {
   /* pricing section */
   .pricing {
     display: flex;
+    background-color: rgb(253, 253, 253);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 85px ;
-    padding-bottom: 50px;
-    /* filter:drop-shadow(5px); */
-    /* -webkit-filter: blur(8px); */
+    padding-bottom: 120px;
   }
   .h2_pricing {
     font-size: 65px ;
@@ -396,89 +396,171 @@ iframe {
     padding-bottom: 30px;
     /* margin-top: -35px; */
   }
-  .pricing_labels_border{
+  /* labels */
+  .labels {
+    /* border: 1px solid; */
+    display: flex;
+    gap: 10px;
+    padding-top: 5%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* labels tables */
+  table {
+    /* border: 1px solid; */
+    /* width: 70%; */
+    border-collapse: collapse;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 30px; */
+
+  }
+  td {
     border: 1px solid;
-    width: 70%;
-    height: 490px;
+    padding: 36px;
+    /* width: 90%; */
+    font-weight: 500;
+    padding-left: -50px;
+    padding-right: -50px;
+    font-size: 16px;
+  }
+  .basic {
+    /* don't give background color for basic */
+    transform: rotate(-90deg);
+    padding: 0;
+    font-size: 17px;
+  }
+  .basic + td {
+    font-size: 34px;
+    color: #ff9000;
+    border-color: black;
+    background-color: black;
+  }
+  .order {
+    background-color: black;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+  
+
+   /* contact us */
+   .contact {
+    display: flex;
+    background-image: url(../multimedia_folder/images/img/Banner-bg.jpg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px ;
+    padding-bottom: 100px;
+    /* filter:drop-shadow(5px); */
+    /* -webkit-filter: blur(8px); */
+    color: white;
+  }
+  .h2_contact {
+    font-size: 40px ;
+  }
+  .contact_para{
+    /* border: 1px solid; */
+    width: 55%;
+    line-height: 30px;
+    font-size: 18px ;
+    text-align: center;
+    padding-bottom: 30px;
+    /* margin-top: -35px; */
+  }
+  .map {
+    height: 400px;
+    width: 100%;
+    box-shadow: -5px 5px 10px rgb(45, 44, 44);
+    /* background-image: url(../multimedia_folder/images/img/map.jpg); */
+  }
+  /* get in touch */
+  .getintouch {
+    background-color: #f0f0f0;
+    background-image: url(../multimedia_folder/images/img/Banner-bg.jpg);
+    display: flex;
+    border: 1px solid;
     padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 30px;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  .form {
+    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 30vw;
+    margin-left: 300px;
+    /* height: 300px; */
   }
-  .label1,.label2,.label3 {
-    border: 1px solid;
-    height: 100px;
+  input {
     width: 100%;
-    display: flex;
-  }
-  .basic_label{
-    border: 1px solid;
+    height: 60px;
     padding: 10px;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    font-size: 15px;
+    border: none;
   }
-  .basic_para{
-    transform: rotate(270deg);
+  .form button{
+    width: 100%;
+    height: 50px;
+    background-color: #ff9100;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
   }
-  .premimum_label {
-    border: 1px solid;
-    /* height: 100%; */
-    padding-left: 60px;
-    padding-right: 60px;
+  .form button:hover {
+    background-color: black;
+  }
+  .connect {
     display: flex;
-    font-size: 25px;
+    /* justify-content: center; */
     align-items: center;
+    gap: 20px;
+  }
+  input[name="message"] {
+    height: 150px;
+  }
 
-  }
-  .bandwidth_label {
-    border: 1px solid;
-    border-left: 5px red;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .memory_label{
-    border: 1px solid;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 53px;
-    padding-right: 53px;
-    text-align: center;
-  }
-  .support_label{
-    border: 1px solid;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-  }
-  .update_label{
-    border: 1px solid;
- 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 55px;
-    padding-right: 55px;
-    text-align: center;
-  }
-  .order_label{
-    border: 1px solid;
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: center;
-  }
+     /* media address section  */
+     .h2_getintouch{
+      font-size: 54px;
+      color: #ff9100;
+     }
+
+    div .connect{
+      color: white;
+    }
+    .mail
+          {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: white;
+          }
+    .mail:hover {
+      color: #ff9100;
+    }
+    .media_icons {
+      padding-top: 30px;
+      cursor: pointer;
+      display: flex;
+      gap: 20px;
+      padding-top: 50px;
+
+    }
+footer {
+ border: 1px solid;
+ height: 80px;
+ background-color: rgba(0, 0, 0, 0.737);
+ color: rgba(255, 255, 255, 0.806);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+} 
+
+

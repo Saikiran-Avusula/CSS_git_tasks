@@ -87,7 +87,7 @@
     </main>
 
     <!-- about section -->
-    <div class="about" id="about">
+    <section class="about" id="about">
       <h2 class="h2_abot">ABOUT US</h2>
       <p class="about_para">
         Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
@@ -100,7 +100,7 @@
       <div>
         <ul class="nov_goals">
           <li>
-            <a class="a_mission" href="./mission.html" target="goals" checked
+            <a class="a_mission" href="./mission.html" target="goals"
               >MISSION</a
             >
           </li>
@@ -124,11 +124,11 @@
                 <div class="photo2"></div> -->
         <div><iframe src="" frameborder="0" name="goals"></iframe></div>
       </div>
-    </div>
+    </section>
 
     <!-- services section -->
 
-    <div class="services" id="services">
+    <section class="services" id="services">
       <h2 class="h2_services">OUR SERVICES</h2>
       <p class="services_para">
         Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
@@ -183,10 +183,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Pricing section -->
-    <div class="pricing" id="pricing">
+    <section class="pricing" id="pricing">
       <h2 class="h2_pricing">PRICING</h2>
       <p class="pricing_para">
         All plans come with unlimited disk space. Our support can be as quick as
@@ -194,54 +194,151 @@
         eu in elit. Class aptent taciti sociosqu.
       </p>
       <hr />
-      <div class="pricing_labels_border">
-        <div class="label1">
-          <div class="basic_label"><p class="basic_para">BASIC</p></div>
-          <div class="premimum_label">$27.50</div>
-          <div class="bandwidth_label">2,000 GB <br />BAND WIDTH</div>
-          <div class="memory_label">32 GB <br />MEMORY</div>
-          <div class="support_label">
-            SUPPORT <br />
-            24 HOURS
-          </div>
-          <div class="update_label">
-            UPDATE <br />
+      <!-- place here -->
+      <div class="labels">
+        <table>
+          <td class="basic">Basic</td>
+          <td>$27.50</td>
+          <td>
+            2,000 <br />
+            BANDWIDTH
+          </td>
+          <td>32gb <br />memory</td>
+          <td>
+            support <br />
+            24 hours
+          </td>
+          <td>
+            update <br />
             $20
-          </div>
-          <div class="order_label">ORDER NOW</div>
-        </div>
-        <div class="label2">
-          <div class="basic_label"><p class="basic_para">BIZ</p></div>
-          <div class="premimum_label">$44.50</div>
-          <div class="bandwidth_label">5,500 GB <br />BAND WIDTH</div>
-          <div class="memory_label">64 GB <br />MEMORY</div>
-          <div class="support_label">
-            SUPPORT <br />
-            1 HOURS
-          </div>
-          <div class="update_label">
-            UPDATE <br />
+          </td>
+          <td class="order">order now</td>
+        </table>
+
+        <!-- label 2 -->
+        <table>
+          <td class="basic">&nbsp BIZ &nbsp</td>
+          <td>$47.50</td>
+          <td>
+            5,500 <br />
+            BANDWIDTH
+          </td>
+          <td>64gb <br />memory</td>
+          <td>
+            support <br />
+            1 hour
+          </td>
+          <td>
+            update <br />
             $10
-          </div>
-          <div class="order_label">ORDER NOW</div>
-        </div>
-        <div class="label3">
-          <div class="basic_label"><p class="basic_para">PRO</p></div>
-          <div class="premimum_label">$72.50</div>
-          <div class="bandwidth_label">12,000 GB <br />BAND WIDTH</div>
-          <div class="memory_label">12 GB <br />MEMORY</div>
-          <div class="support_label">
-            SUPPORT <br />
-            15 MIN
-          </div>
-          <div class="update_label">
-            UPDATE <br />
-            FREE
-          </div>
-          <div class="order_label">ORDER NOW</div>
-        </div>
+          </td>
+          <td class="order">order now</td>
+        </table>
+
+        <!-- label 3 -->
+        <table>
+          <td class="basic">&nbsp PRO</td>
+          <td>$44.50</td>
+          <td>
+            12,000 <br />
+            BANDWIDTH
+          </td>
+          <td>128gb <br />memory</td>
+          <td>
+            support <br />
+            15 mins
+          </td>
+          <td>
+            update <br />
+            free
+          </td>
+          <td class="order">order now</td>
+        </table>
       </div>
-    </div>
+    </section>
+
+    <!-- contact us section -->
+    <section class="contact" id="contact">
+      <h2 class="h2_contact">CONTACT US</h2>
+      <p class="contact_para">
+        Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+        nunc. Etiam pharetra, erat sed fermentum feugiat velit mauris egestas
+        quamut aliquam massa nisl quis neque. Suspendisse in orci enim.
+      </p>
+      <hr />
+    </section>
+
+    <!-- map section -->
+    <section>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15222.224797962062!2d78.39559795!3d17.4809431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1717264018665!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- get in touchsection -->
+    <section class="getintouch">
+      <form action="./november.html">
+          <div class="form">
+            <label for="name"
+              ><input type="text" name="name" id="name" placeholder="NAME" /></label>
+            <label for="mail"
+              ><input
+                type="email"
+                id="mail"
+                name="mail"
+                placeholder="EMAIL" /></label>
+            <label for="title">
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="TITLE"
+              /> </label>
+            <label for="message">
+              <input
+                type="text"
+                name="message"
+                id="message"
+                placeholder="MESSAGE"
+              />
+            </label>
+            <!-- <input type="button" value="SEND" formaction="../CSS_git_tasks/Project1/november.html"> -->
+            <button>SEND</button>
+          </div>
+        </form>
+
+        </div>
+        <div class="media">
+          <h2 class="h2_getintouch">GET IN TOUCH !</h2>
+          <br>
+          <div>
+              <div class="connect">
+                <ion-icon name="map-outline" style="font-size: 30px;"></ion-icon>
+                <p>990 Proin Gravida Street, Aliquet Snean Tate,<br>
+                  Lincoln Way, San Francisco, California.</p>
+              </div>
+              <br>
+              <div class="connect">
+                <ion-icon name="call" style="font-size: 30px;"></ion-icon>
+                <p>(+001) 001 002 0034, (+002) 009 008 0760 <br>
+                  (+003) 456 050 0670</p>
+              </div>
+              <br>
+              <div class="mail">
+                <ion-icon name="mail-outline" style="font-size: 30px;"></ion-icon>
+                <p>info@november.com</p>
+              </div>
+          </div>
+
+           <!-- media icons -->
+           <div class="media_icons">
+            <img src="../multimedia_folder/images/img/facebook-icn.png" alt="facebook-icn"> 
+            <img src="../multimedia_folder/images/img/twitter-icn.png" alt="twitter-icn"> 
+            <img src="../multimedia_folder/images/img/google-plus-icn.png" alt="google-plus-icn">
+           </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer><p>Designed by SAI KIRAN AVUSULA</p></footer>
 
     <!-- ion iconic script tags -->
     <script
