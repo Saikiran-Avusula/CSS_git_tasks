@@ -14,82 +14,106 @@
     margin: 0;
     padding: 0;
   }
-  /* nav bar section */
- nav {
-   border: 1px solid;
-   background-color: rgba(0, 0, 0, 0.814);
-   min-width: 100%;
-   height: 10svh;
-   position: fixed;
-   top: 0;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
- }
- .navigation {
-  display: flex;
-}
-.navigation>li {
-  display: inline;
-}
-.navigation a {
-  text-decoration: none;
-  color: white; 
-  font-size: 18px;
-}
-.logo {
-  font-size: 36px;
-  color: white;
-}
-.span_logo{
-  color: orange;
-}
-.home_nav {
-  background-color: rgba(3, 129, 247, 0.308);
-  border: 1px solid black;
-  font-weight: 300;
-  border-bottom-color: orange;
-  border-bottom-width: 5px;
-}
-li>a {
-  /* border: 1px solid white; */
-  padding: 30px;
-  font-weight: 300;
-}
-.h_about:hover,.h_services:hover, .h_pricing:hover,.h_contact:hover{
-  background-color: rgba(3, 129, 247, 0.308);
-  border: 1px solid rgba(3, 129, 247, 0.308);
-  font-weight: 300;
-  border-bottom-color: #ff9000;
-  border-bottom-width: 5px;
-}
+ /* nav bar section */
 
-@media screen  and (min-width:768px) and (max-width:1024px)
-{
-  nav {
-    border: 1px solid ;
+      header {
+        border: 1px solid;
+        background-color: rgba(0, 0, 0, 0.814);
+        min-width: 100%;
+        height: 10svh;
+        position: fixed;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .navigation {
+        display: flex;
+      }
+      .navigation > li {
+        display: inline;
+      }
+      .navigation a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+      .logo {
+        font-size: 36px;
+        color: white;
+      }
+      .span_logo {
+        color: orange;
+      }
+      .home_header {
+        background-color: rgba(3, 129, 247, 0.308);
+        border: 1px solid black;
+        font-weight: 300;
+        border-bottom-color: orange;
+        border-bottom-width: 5px;
+      }
+      li > a {
+        padding: 30px;
+        font-weight: 300;
+      }
+      .h_about:hover,
+      .h_services:hover,
+      .h_pricing:hover,
+      .h_contact:hover {
+        background-color: rgba(3, 129, 247, 0.308);
+        border: 1px solid rgba(3, 129, 247, 0.308);
+        font-weight: 300;
+        border-bottom-color: #ff9000;
+        border-bottom-width: 5px;
+      }
+/* end of nav bar section */
+
+ /* media quires for header */
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+    gap: 23px;
+
+  }
+  li > a {
+    padding: 1.5em;
+  }
+}
+@media screen  and (max-width:770px){
+  header {
+    border: 1px solid;
     background-color: rgba(0, 0, 0, 0.814);
     min-width: 100%;
-    height: 10svh;
+    height: 8svh;
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    gap: 15em;
-  }
-  .logo {
-    background-color: red;
+    justify-content: space-between;
+    gap: 50px;
   }
   .navigation {
-    display: flex;
-    justify-content:start;
-    align-items: start;
+  visibility: hidden;
+  display: none;
   }
-  
-}
+       
+  ion-icon[name="menu-outline"] {
+    background-color: #ff9000;
+    width: 100%;
+    height: 100%;
+  }
 
-/* end of nav bar section */
+  .burger_bar {
+    /* background-color: blue; */
+    width: 50px;
+    height: 8svh;
+    border: 5px solid #ff9000;
+    color: white;
+    margin-left: 35em;
+  }
+}
+/* end for media quires for header */
 
 
 /* .home, */
@@ -423,6 +447,7 @@ iframe {
    padding-bottom: 30px;
    /* margin-top: -35px; */
  }
+
  /* labels */
  .labels {
    /* border: 1px solid; */
@@ -432,6 +457,7 @@ iframe {
    justify-content: center;
    flex-direction: column;
  }
+
  /* labels tables */
  table {
    /* border: 1px solid; */
@@ -451,12 +477,24 @@ iframe {
  
  td {
    border: 1px solid;
-   padding: 36px;
+   padding: 2.1rem;
    /* width: 90%; */
    font-weight: 500;
    padding-left: -50px;
    padding-right: -50px;
    font-size: 16px;
+ }
+ @media screen and (max-width: 883px) {
+  td {
+    border: 5px solid red;
+    padding: 1em;
+    /* width: 90%; */
+    font-weight: 500;
+    padding-left: -50px;
+    padding-right: -50px;
+    font-size: 16px;
+  }
+
  }
  .basic {
    /* don't give background color for basic */

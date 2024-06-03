@@ -17,22 +17,33 @@
 
     <!-- header section -->
     <header>
-      <nav>
         <div>
           <h3 class="logo">NO<span class="span_logo">VEM</span>BER</h3>
         </div>
 
+          <div class="burger-button">
+            <button class="burger_bar">
+            <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+          <style>
+            @media sceen and (min-width:773px) {
+                .menu-outline  {
+                 display: block;
+              }
+            }
+
+          </style>
         <!-- header navigations -->
         <div>
           <ul class="navigation">
-            <li><a class="home_nav" href="#home">Home</a></li>
+            <li><a class="home_header" href="#home">Home</a></li>
             <li><a class="h_about" href="#about">About</a></li>
             <li><a class="h_services" href="#services">Services</a></li>
             <li><a class="h_pricing" href="#pricing">Pricing</a></li>
             <li><a class="h_contact" href="#contact">Contact</a></li>
           </ul>
         </div>
-      </nav>
     </header>
 
         <!-- ion iconic script tags -->
