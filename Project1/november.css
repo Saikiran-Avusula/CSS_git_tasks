@@ -381,7 +381,7 @@ hr {
  /* box-shadow: -2px 0px 10px rgb(45, 44, 44); */
 }
 .iframe-photo-info {
- border: 1px solid;
+ /* border: 1px solid; */
  width: 550px;
  height: 265px;
  margin-top: -30em;
