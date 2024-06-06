@@ -6,9 +6,10 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    }
 
-   .h2_about, .h2_pricing, .h2_services, .h2_contact, .h2_getintouch{
+   .h2_about, .h2_pricing, .h2_services, .h2_contact, .h2_getintouch, .bold-text-price, .plan-basic, .btn-order-now {
    font-family: "Oswald", sans-serif;
    }
+
 
   *,*::after,*::before {
     margin: 0;
@@ -25,6 +26,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 nav ul {
   /* here nav is parent for ul so width kept as 100% */
@@ -315,11 +317,12 @@ hr {
  align-items: center;
  color: rgba(0, 0, 0, 0.447);
  text-decoration: none;
- padding-left: 60px;
- padding-right: 60px;
- padding-top: 15px;
- padding-bottom: 15px;
+ padding-left: 40px;
+ padding-right: 40px;
+ padding-top: 28px;
+ padding-bottom: 28px;
  font-weight: 500;
+ 
 }
 .a_mission{
  background-color: #ff9000;
@@ -332,6 +335,7 @@ hr {
 .about_frame {
  /* border: 1px solid; */
  display: flex;
+ padding: 3em;
  justify-content:center;
  gap: 30px;
 }
@@ -349,27 +353,32 @@ hr {
 iframe {
  width: 550px;
  height: 265px;
- margin-top: -8px;
+ margin-top: -3em;
+ margin-left: 4em;
 }
 
-/* .about_photo{
- border: 1px solid; */
- /* position: absolute; } */
+.about_photo{
+ border: 1px solid;
+ position: relative; 
+}
 
-/* .photo1 {
+.photo1 {
  border: 1px solid red;
- width: 80%;
- height: 200px;
+ width: 25%;
+ height: 16em;
+ margin-left: -28.5em;
  z-index: 2;
- position: relative;
+ position: absolute;
 }
 .photo2 {
- border: 1px solid;
- width: 80%;
- height: 200px;
+ border: 1px solid blue;
+ width: 25%;
+ margin-top: -2.5em;
+ margin-left: -25em;
+ height: 15em;
  z-index: 1;
- position: relative;
-} */
+ position: absolute;
+}
 
 .services {
    display: flex;
@@ -461,7 +470,7 @@ iframe {
  /* pricing section */
  .pricing {
    display: flex;
-   background-color: rgb(253, 253, 253);
+   background-color: #ececec;
    flex-direction: column;
    justify-content: center;
    align-items: center;
@@ -481,72 +490,100 @@ iframe {
    /* margin-top: -35px; */
  }
 
- /* labels */
- .labels {
-   /* border: 1px solid; */
-   display: flex;
-   gap: 10px;
-   padding-top: 5%;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+ /* pricing labels */
+
+ .pricing-table {
+  /* border: 5px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 5em;
+  padding: 10px;
+}
+.plan-basic p{
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+}
+.plan-biz p{
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+}
+ .plan-pro p{
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
  }
 
- /* labels tables */
- table {
-   /* border: 1px solid; */
-   width: 70%;
-   border-collapse: collapse;
-   text-align: center;
-   text-transform: uppercase;
-   display: flex;
-   justify-content: center;
-   /* margin-bottom: 30px; */
+.plan-basic,
+.plan-biz,
+.plan-pro {
+  display: flex;
+  gap: 6em;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  background-color: white;
+  color: #979797;
 
- }
- .label_hover:hover td {
-   background-color: orange;
-   color: white;
- }
- 
- td {
-   border: 1px solid;
-   padding: 2.1rem;
-   /* width: 90%; */
-   font-weight: 500;
-   padding-left: -50px;
-   padding-right: -50px;
-   font-size: 16px;
- }
- @media screen and (max-width: 883px) {
-  td {
-    border: 5px solid red;
-    padding: 1em;
-    /* width: 90%; */
-    font-weight: 500;
-    padding-left: -50px;
-    padding-right: -50px;
-    font-size: 16px;
-  }
-
- }
- .basic {
-   /* don't give background color for basic */
-   transform: rotate(-90deg);
-   padding: 0;
-   font-size: 17px;
- }
- .basic + td {
-   font-size: 34px;
-   color: #ff9000;
-   border-color: black;
-   background-color: black;
- }
- .order {
-   background-color: black;
-   color: white;
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
- }
+}
+.plan-basic p:first-child {
+  position: relative;
+  z-index: 1;
+  color: black;
+  transform: rotate(-90deg);
+  background-color: #ff9100;
+  width: 6.1em;
+  height: 2.8em;
+  font-size: 17px;
+  margin-left: -1.8em;
+  padding-top: .8em;
+}
+.plan-biz p:first-child {
+  color: black;
+  transform: rotate(-90deg);
+  background-color: #ff9100;
+  width: 6.5em;
+  height: 3.1em;
+  font-size: 17px;
+  margin-left: -1.5em;
+/* text padding */
+  padding-top: .8em;
+}
+.plan-pro p:first-child {
+  color: black;
+  transform: rotate(-90deg);
+  background-color: #ff9100;
+  width: 6.1em;
+  height: 2.8em;
+  font-size: 17px;
+  margin-left: -1.8em;
+  padding-top: .8em;
+  font-family: "Oswald", sans-serif;
+}
+.bold-text-price {
+  font-size: 34px;
+  border: 5px solid black;
+  margin-left: -3.8em;
+  padding: .6em 2em;
+  width: 20%;
+  color: #ff9100;
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+}
+.btn-order-now {
+  border: none;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 0 2em;
+  width: 15%;
+  height: 6em;
+  cursor: pointer;
+  font-weight: 800;
+}
  
 
   /* contact us */
@@ -563,7 +600,7 @@ iframe {
    color: white;
  }
  .h2_contact {
-   font-size: 40px ;
+   font-size: 65px ;
  }
  .contact_para{
    /* border: 1px solid; */
