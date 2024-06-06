@@ -753,7 +753,7 @@ hr {
 
 @media screen and (max-width:1148px) {
   .pricing-table {
-    border: 5px solid red;
+    /* border: 5px solid red; */
     display: flex;
     flex-direction: column;
     gap: 30px;
