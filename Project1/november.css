@@ -151,19 +151,6 @@ svg {
 /* end for media quires for header */
 
 
-/* .home, */
- /* .about, */
- /* .services, */
- /* .pricing, */
- /* .contact, */
- /* .map, */
- /* .getintouch, */
- /* .footer 
- {
-   border: 1px solid;
-   width: 100%;
-   height: 100%;
- } */
  /* home - main section */
  .home {
   padding: 50px;
@@ -172,12 +159,43 @@ svg {
   display: flex;
   justify-content: center;
   align-items: end;
-  gap: 30px;
+  gap: 38px;
   background-image: url(../multimedia_folder/images/img/Banner-bg.jpg);
 }
+@media screen and (max-width:1024px) {
+  .home {
+   padding: 20px;
+   justify-content: space-evenly;
+   gap: 10px;
+  } 
+}
+@media screen and (max-width:1300px) {
+  .home {
+   padding: 30px;
+   justify-content: space-evenly;
+   gap: 5em;
+   /* height: 80vh; */
+  } 
+}
+@media sceen and (max-width:768px)
+{
+  .home {
+    border: 5ox solid red;
+    padding: 50px;
+    background-color: rgb(222, 226, 226);
+    background-repeat: no-repeat;
+    /* display: flex; */
+    justify-content: center;
+    align-items: end;
+    gap: 38px;
+    background-image: url(../multimedia_folder/images/img/Banner-bg.jpg);
+  }
+}
 .home_text {
+  /* border: 5px solid red; */
   width: 20%;
   height: 400px;
+  margin-bottom: 45px;
 }
 .home_text>p:first-child {
  color: white;
@@ -228,6 +246,18 @@ i~button:hover {
   animation-iteration-count: infinite;
   box-shadow: -2px 0px 10px rgb(45, 44, 44);
 }
+@media screen and (max-width:1300px) {
+  .home_slide {
+    width: 60%;
+    height: 450px;
+  } 
+}
+@media screen and (max-width:1024px) {
+  .home_slide {
+    width: 60%;
+    height: 450px;
+  } 
+}
 @keyframes slideshow {
 30% { background-image: url(../multimedia_folder/images/img/Slider-img1.jpg);
  
@@ -271,6 +301,8 @@ i~button:hover {
 }
 
 
+
+
 /* about section */
 .about {
   /* height: 70vh; */
@@ -282,7 +314,7 @@ i~button:hover {
   padding-top: 85px ;
   padding-bottom: 90px;
 }
-.h2_abot{
+.h2_about{
  font-size: 56px;
  font-family: "Oswald", sans-serif;
 }
@@ -335,7 +367,6 @@ hr {
 .about_frame {
  /* border: 1px solid; */
  display: flex;
- /* padding: 3em; */
  justify-content:center;
  gap: 30px;
 }
@@ -350,7 +381,7 @@ hr {
  /* box-shadow: -2px 0px 10px rgb(45, 44, 44); */
 }
 .iframe-photo-info {
-  /* border: 1px solid; */
+ border: 1px solid;
  width: 550px;
  height: 265px;
  margin-top: -30em;
@@ -385,6 +416,114 @@ hr {
  background-size: cover;
  box-shadow: -2px 0px 10px rgb(45, 44, 44);
 }
+@media screen and (max-width:1266px) {
+  .iframe-photo-info {
+    /* border: 1px solid; */
+   margin-right: -15em;
+  }
+  .photo1 {
+   width: 32vw;
+   margin-left: -28em;
+  }
+  .photo2 {
+    width: 32vw;
+    margin-left: -32em;
+  }
+
+  @media screen and (max-width:1078px){
+    .iframe-photo-info {
+     margin-right: -10em;
+    }
+    .photo1 {
+     margin-left: -25em;
+    }
+    .photo2 {
+      margin-left: -28em;
+    }
+    
+  }
+}
+@media screen and (max-width:1024px) {
+  .iframe-photo-info {
+    margin-right: -8em;
+   }
+   .photo1 {
+    margin-left: -25em;
+   }
+   .photo2 {
+     margin-left: -23em;
+   }
+}
+@media screen and (max-width:940px){
+   .iframe-photo-info {
+   width: 500px;
+   height: 285px;
+   margin-bottom: 2em;
+   margin-right: -6em;
+  }
+   .photo1 {
+    width: 38vw;
+    margin-left: -24em;
+   }
+   .photo2 {
+    width: 34vw;
+     margin-left: -23em;
+   }
+}
+@media screen and (max-width:920px){
+  .iframe-photo-info {
+  width: 400px;
+  height: 20em;
+  margin-bottom: .5em;
+  margin-right: -6em;
+ }
+}
+
+@media screen and (max-width:840px){
+  .iframe-photo-info {
+  width: 20em;
+  height: 28em;
+  margin-bottom: -8em;
+  margin-right: -6em;
+ }
+ .photo1 {
+  width: 42vw;
+  height: 15em;
+  margin-left: -24em;
+ }
+ .photo2 {
+  width: 38vw;
+  height: 15em;
+   margin-left: -23em;
+ }
+}
+
+@media screen and (max-width:768px){
+  .iframe-photo-info {
+  width: 20em;
+  height: 20em;
+  margin-bottom: -22em;
+  margin-right: 20em;
+ }
+ .photo1 {
+  width: 53vw;
+  height: 15em;
+  margin-left: 2em;
+ }
+ .photo2 {
+  width: 54vw;
+  height: 15em;
+   margin-left: -8em;
+ }
+ .about_frame {
+  display: flex;
+  justify-content:flex-start;
+  gap: 30px;
+ }
+}
+
+
+
 
 .services {
    display: flex;
@@ -399,6 +538,17 @@ hr {
    background-size: cover;
    background-position: center;
  }
+ @media screen and (max-width:840px) {
+  .services {
+  margin-top: 10em;
+ }
+}
+@media screen and (max-width:768px) {
+  .services {
+  margin-top: 20em;
+ }
+}
+
  .h2_services {
    color: white;
    font-size: 65px
@@ -518,8 +668,6 @@ hr {
   font-family: "Oswald", sans-serif;
   font-weight: 800;
  }
-
-
 .plan-basic,
 .plan-biz,
 .plan-pro {
@@ -600,6 +748,93 @@ hr {
 .plan-basic:hover , .plan-biz:hover, .plan-pro:hover {
   background-color: black;
   color: white;
+}
+
+
+@media screen and (max-width:1148px) {
+  .pricing-table {
+    border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 5em;
+    padding: 10px;
+  }
+  .plan-basic p{
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+  }
+  .plan-biz p{
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+  }
+   .plan-pro p{
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+   }
+  .plan-basic,
+  .plan-biz,
+  .plan-pro {
+    display: flex;
+    gap: 3em;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    background-color: white;
+    color: #979797;
+  
+  }
+  .plan-basic p:first-child {
+    position: relative;
+    z-index: 1;
+    color: black;
+    transform: rotate(-90deg);
+    background-color: #ff9100;
+    width: 6em;
+    height: 3.1em;
+    font-size: 17px;
+    margin-left: -1.8em;
+    padding-top: .8em;
+  }
+  .plan-biz p:first-child {
+    color: black;
+    transform: rotate(-90deg);
+    background-color: #ff9100;
+    width: 6em;
+    height: 3.2em;
+    font-size: 17px;
+    margin-left: -1.5em;
+    padding-top: .8em;
+  }
+  .plan-pro p:first-child {
+    color: black;
+    transform: rotate(-90deg);
+    background-color: #ff9100;
+    width: 6em;
+    height: 3.2em;
+    font-size: 17px;
+    margin-left: -1.8em;
+    padding-top: .8em;
+  }
+  .bold-text-price {
+    font-size: 34px;
+    border: 5px solid black;
+    margin-left: -3.8em;
+    padding: .6em 2.2em;
+    width: 25%;
+    color: #ff9100;
+    background-color: black;
+    font-family: "Oswald", sans-serif;
+  }
+  .btn-order-now {
+    padding: 0 2em;
+    width: 18%;
+    height: 6em;
+  }
+  
 }
 
   /* contact us */
