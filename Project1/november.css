@@ -519,6 +519,7 @@ hr {
   font-weight: 800;
  }
 
+
 .plan-basic,
 .plan-biz,
 .plan-pro {
@@ -568,6 +569,7 @@ hr {
   padding-top: .8em;
   font-family: "Oswald", sans-serif;
 }
+
 .bold-text-price {
   font-size: 34px;
   border: 5px solid black;
@@ -590,7 +592,15 @@ hr {
   cursor: pointer;
   font-weight: 800;
 }
- 
+.btn-order-now:hover {
+  background-color: #ff9100;
+  color: white;
+}
+
+.plan-basic:hover , .plan-biz:hover, .plan-pro:hover {
+  background-color: black;
+  color: white;
+}
 
   /* contact us */
   .contact {
